@@ -1,0 +1,156 @@
+/* CSS 기본 셋팅 */
+@font-face {
+    font-family: 'AstaSans';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2505-1@1.0/AstaSans-Light.woff2') format('woff2');
+    font-weight: 300;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'AstaSans';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2505-1@1.0/AstaSans-Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'AstaSans';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2505-1@1.0/AstaSans-Medium.woff2') format('woff2');
+    font-weight: 500;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'AstaSans';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2505-1@1.0/AstaSans-SemiBold.woff2') format('woff2');
+    font-weight: 600;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'AstaSans';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2505-1@1.0/AstaSans-Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'AstaSans';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2505-1@1.0/AstaSans-ExtraBold.woff2') format('woff2');
+    font-weight: 800;
+    font-display: swap;
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+  font-family: 'AstaSans';
+}
+
+.footer {
+  height: 294px;
+  background: #000;
+  color: #fff;
+  padding: 38px 350px;
+  font-size: 13px;
+}
+
+/* TOP */
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-logo {
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.footer-links {
+  display: flex;
+  gap: 40px;
+  list-style: none;
+  font-size: 20px;
+}
+
+.footer-links li {
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+.footer-links span {
+  margin-left: 6px;
+  font-size: 10px;
+}
+
+/* LINE */
+.footer-line {
+  margin: 21px 0px;
+  height: 1px;
+  background: rgba(255,255,255,0.2);
+}
+
+/* INFO */
+.footer-info p {
+  margin-bottom: 8px;
+  text-align: left;
+  opacity: 0.8;
+  font-size: 18px;
+}
+
+.footer-info .copyright {
+  margin-top: 16px;
+  font-weight: 400;
+  opacity: 0.6;
+}
+
+/* BOTTOM */
+.footer-bottom {
+  margin-top: 34px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-policy {
+  display: flex;
+  gap: 24px;
+  list-style: none;
+  opacity: 0.8;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+/* BADGES (이미지 → 색상 박스) */
+.footer-badges {
+  display: flex;
+  gap: 16px;
+}
+
+.badge {
+  width: 88px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  font-weight: 600;
+  border-radius: 4px;
+}
+
+/* CP AA */
+.badge-cp {
+  background: linear-gradient(135deg, #1f4fff, #00c2ff);
+}
+
+/* 가족친화 */
+.badge-family {
+  background: linear-gradient(135deg, #ff3d3d, #ffb400);
+}
