@@ -69,15 +69,20 @@ body{
 }
 
 .footer-logo {
+  width: 133px;
+  height: 50px;
   font-size: 22px;
   font-weight: 700;
+  background-position: center;
+  background: url(../기타파일/동화슨.png) no-repeat center;
+  background-size: contain;
 }
 
 .footer-links {
   display: flex;
-  gap: 40px;
+  gap: 44px;
   list-style: none;
-  font-size: 20px;
+  font-size: 15px;
 }
 
 .footer-links li {
@@ -86,7 +91,7 @@ body{
 }
 
 .footer-links span {
-  margin-left: 6px;
+  margin-left: 70px;
   font-size: 10px;
 }
 
@@ -102,7 +107,7 @@ body{
   margin-bottom: 8px;
   text-align: left;
   opacity: 0.8;
-  font-size: 18px;
+  font-size: 14px;
 }
 
 .footer-info .copyright {
@@ -110,6 +115,36 @@ body{
   font-weight: 400;
   opacity: 0.6;
 }
+
+.footer-middle {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+/* 기부 문의 (정확한 위치) */
+.footer-donation {
+  display: flex;
+  width: 115px;
+  justify-content: space-between;
+  font-size: 13px;
+  opacity: 0.8;
+  cursor: pointer;
+  white-space: nowrap;
+  align-self: center;
+  margin-bottom: 65px;
+}
+
+.footer-donation span {
+  margin-left: 6px;
+  font-size: 12px;
+}
+
+.footer-donation:hover {
+  opacity: 1;
+  text-decoration: underline;
+}
+
 
 /* BOTTOM */
 .footer-bottom {
@@ -124,7 +159,7 @@ body{
   gap: 24px;
   list-style: none;
   opacity: 0.8;
-  font-size: 20px;
+  font-size: 15px;
   font-weight: 400;
 }
 

@@ -4,7 +4,7 @@ function Footer() {
   return (
     <footer className="footer">
       <div className="footer-top">
-        <div className="footer-logo">동화약품</div>
+        <div className="footer-logo"></div>
 
         <ul className="footer-links">
           <li>Family Site <span>▲</span></li>
@@ -15,6 +15,7 @@ function Footer() {
 
       <div className="footer-line" />
 
+    <div className='footer-middle'>
       <div className="footer-info">
         <p>서울특별시 중구 서소문로9길 20 &nbsp; | &nbsp; Tel : 02-2021-9300</p>
         <p>대표이사 : 유준하, 윤인호 &nbsp; | &nbsp; 사업자등록번호 : 110-81-00102</p>
@@ -22,7 +23,10 @@ function Footer() {
           COPYRIGHT DONGWHA PHARMACEUTICAL CO., LTD. ALL RIGHT RESERVED.
         </p>
       </div>
-
+      <div className="footer-donation">
+          기부 문의 <span className="arrow">↗</span>
+      </div>
+    </div>
       <div className="footer-bottom">
         <ul className="footer-policy">
           <li>사이트 이용 약관</li>
