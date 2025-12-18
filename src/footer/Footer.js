@@ -1,4 +1,6 @@
 import '../CSS/Footer.css';
+import cpaa from '../기타파일/웹디자인 로고/cpaa.png'
+import family from '../기타파일/웹디자인 로고/family.png'
 
 function Footer() {
   return (
@@ -39,8 +41,8 @@ function Footer() {
         </ul>
 
         <div className="footer-badges">
-          <div className="badge badge-cp">CP AA</div>
-          <div className="badge badge-family">가족친화</div>
+          <div className="badge badge-cp"><img src={cpaa} className='badge cpaa'></img></div>
+          <div className="badge badge-family"><img src={family} className='badge family'></img></div>
         </div>
       </div>
     </footer>

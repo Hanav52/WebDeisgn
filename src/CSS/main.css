@@ -177,7 +177,6 @@ body{
   height: 950px;
 }
 
-
 .section02 {
   height: 1000px;
   background-image: url('../기타파일/section02.jpg');
@@ -186,8 +185,13 @@ body{
   background-position: center;
   filter: brightness(20%);
 }
-/* .section03 {
-} */
+
+/* section03 영역 설정 */
+.video {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
 .section04 {
   height: 1000px;
   background-image: url('../기타파일/sec.png');
@@ -195,8 +199,6 @@ body{
   background-repeat: no-repeat;
   background-position: center;
 }
-
-
 
 /* footer 영역 설정 */
 .footer-last {

@@ -168,6 +168,12 @@ body{
   display: flex;
   gap: 16px;
 }
+.cpaa {
+  object-fit: contain;
+}
+.family {
+  object-fit: contain;
+}
 
 .badge {
   width: 88px;
@@ -181,11 +187,11 @@ body{
 }
 
 /* CP AA */
-.badge-cp {
+/* .badge-cp {
   background: linear-gradient(135deg, #1f4fff, #00c2ff);
-}
+} */
 
 /* 가족친화 */
-.badge-family {
+/* .badge-family {
   background: linear-gradient(135deg, #ff3d3d, #ffb400);
-}
+} */
