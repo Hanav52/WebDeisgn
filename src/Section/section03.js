@@ -1,36 +1,21 @@
 import '../CSS/main.css'
-import 'swiper/css';
-import 'swiper/css/navigation';
-import { Navigation, Pagination } from 'swiper/modules';
-import { Swiper, SwiperSlide } from 'swiper/react';
+import section033 from './section033.mp4'
 
 function Section03() {
   return (
-    <Swiper
-        slidesPerView={1}
-        spaceBetween={30}
-        loop={true}
-        pagination={{
-          clickable: true,
-        }}
-        navigation={true}
-        modules={[Pagination, Navigation]}
-        className="mySwiper"
-      >
-        <SwiperSlide>Slide 1</SwiperSlide>
-        <SwiperSlide>Slide 2</SwiperSlide>
-        <SwiperSlide>Slide 3</SwiperSlide>
-        <SwiperSlide>Slide 4</SwiperSlide>
-        <SwiperSlide>Slide 5</SwiperSlide>
-        <SwiperSlide>Slide 6</SwiperSlide>
-        <SwiperSlide>Slide 7</SwiperSlide>
-        <SwiperSlide>Slide 8</SwiperSlide>
-        <SwiperSlide>Slide 9</SwiperSlide>
-      </Swiper>
+    <section className='section03'>
+      <video className="video" autoPlay muted loop>
+        <source src={section033} type="video/mp4"/>
+      </video>
+
+
+      
+    </section>
   );
 }
 
 export default Section03;
 
 
-/* 출처: https://uiweb.tistory.com/170 [찐망고'S 퍼블리싱그리고디자인:티스토리] */
+{/* 출처: https://uiweb.tistory.com/170 [찐망고'S 퍼블리싱그리고디자인:티스토리]
+[출처] html5 비디오 삽입,재생 (백그라운드 동영상자동재생)|작성자 작은악마 */}

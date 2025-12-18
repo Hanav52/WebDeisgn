@@ -10,18 +10,18 @@ function Header() {
         </div>
         <div className="head-brand">
           <div className='head-gnb'>
-            <a>회사소개</a>
-            <a>브랜드</a>
-            <a>R&D</a>
-            <a>정도경영</a>
-            <a>뉴스룸</a>
-            <a>인재채용</a>
-            <a>고객지원</a>
+            <a href='#'>회사소개</a>
+            <a href='#'>브랜드</a>
+            <a href='#'>R&D</a>
+            <a href='#'>정도경영</a>
+            <a href='#'>뉴스룸</a>
+            <a href='#'>인재채용</a>
+            <a href='#'>고객지원</a>
           </div>
         </div>
         <div className='head-last'>
           <form className="head-search">
-            <input className="abcd" type="search" placeholder="Search" aria-label="검색">
+            <input type="search" placeholder="Search" aria-label="검색">
             </input>
           </form>
           <div className='head-hamburger'>
