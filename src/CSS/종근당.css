@@ -488,6 +488,10 @@ a.scroll-info:hover {color:#fff; background:url(/index/images/scroll_info_arrow-
  -webkit-animation: blink 1s step-end infinite;
 }
 
+.blinkcss {
+  animation-timeline: view();
+}
+
 /* 191002 */
 .shortcut {position:fixed; bottom:0; right:0; width:200px; height:200px; background:#222; display:table; z-index:13;}
 .shortcut::after {content:""; display:block; position:absolute; width:28px; height:28px; top:30px; right:30px; background:url("/index/images/shorcut-30a93eee39e4a6f1f4172ff1723ac67f.png")50% no-repeat;}

@@ -47,13 +47,13 @@ function Section04() {
         <SwiperSlide>Slide 8</SwiperSlide>
         <SwiperSlide>Slide 9</SwiperSlide>
         </Swiper>
-        {/* <div className="brand-pagination">
+        <div className="brand-pagination">
           <div className='swiper-button-prev-prev'></div>
             <span>01</span>
             <span>|</span>
             <span>05</span>
           <div className='swiper-button-next-next'></div>
-        </div> */}
+        </div>
       </div>
       {/* 하단 페이지네이션 */}
       
