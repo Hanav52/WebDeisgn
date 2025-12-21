@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../src/CSS/SubSection01.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- 박스는 고정, 스크롤하면 이미지가 이동하는 효과 -> 패럴랙스 효과 ( in-box parallax ) -->
+    <section class="rnd-section">
+        <div class="rnd-inner">
+            <!-- 텍스트 영역 -->
+            <div class="rnd-text">
+                <h2>연구개발본부 소개</h2>
+                <p>
+                    변화하는 의약품 시장에 대응해 신약·개량신약과 핵심 신제품을 개발하며<br>
+                    회사의 미래 성장과 경쟁력을 이끄는 핵심 조직입니다.
+                </p>
+            </div>
+
+            <!-- 이미지 박스 -->
+            <div class="rnd-image-box">
+                <img src="../src/기타파일/동화약품사옥.jpg" alt="연구개발센터" class="rnd-image"/>
+            </div>
+        </div>
+    </section>
+
+
+    <script>
+        const image = document.querySelector('.rnd-image');
+        const box = document.querySelector('.rnd-image-box');
+
+        window.addEventListener('scroll', () => {
+            const boxRect = box.getBoundingClientRect();
+            const windowHeight = window.innerHeight;
+
+            // 박스가 화면 안에 있을 때만
+            if (boxRect.top < windowHeight && boxRect.bottom > 0) {
+                const progress =
+                    (windowHeight - boxRect.top) /
+                    (windowHeight + boxRect.height);
+
+                const move = Math.min(Math.max(progress * 160, 0), 160);
+                image.style.transform = `translateY(${move}px)`;
+            }
+        });
+    </script>
+
+
+</body>
+
+</html>

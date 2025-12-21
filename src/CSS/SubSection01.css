@@ -1,0 +1,48 @@
+/* 전체 섹션 */
+.rnd-section {
+  background: #000;
+  color: #fff;
+  padding: 140px 0 180px;
+}
+
+/* 가운데 정렬 */
+.rnd-inner {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+/* 텍스트 */
+.rnd-text {
+  margin-bottom: 64px;
+}
+
+.rnd-text h2 {
+  font-size: 48px;
+  font-weight: bold;
+  margin-bottom: 28px;
+}
+
+.rnd-text p {
+  font-size: 24px;
+  /* line-height: 1.7; */
+  max-width: 820px;
+  /* opacity: 0.9; */
+}
+
+/* 이미지 박스 (시안 핵심) */
+.rnd-image-box {
+  position: relative;
+  width: 100%;
+  height: 320px;              /* 🔥 시안과 같은 얇은 가로 박스 */
+  overflow: hidden;
+}
+
+/* 실제 이미지 */
+.rnd-image {
+  position: absolute;
+  top: -120px;                /* 🔥 시작 위치 (위쪽이 더 보이게) */
+  left: 0;
+  width: 100%;
+  height: auto;
+  will-change: transform;
+}
