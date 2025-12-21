@@ -1,0 +1,150 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.history {
+    position: relative;
+    height: 100vh;
+    background: url('../기타파일/section02.jpg') center/cover no-repeat;
+  background-size: cover;
+
+    color: #fff;
+    overflow: hidden;
+}
+/* height: 1000px;
+  background-image: url('../기타파일/section02.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  filter: brightness(20%); */
+
+.history-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.65);
+    z-index: 1;
+}
+
+.history-inner {
+    position: relative;
+    height: 100%;
+    z-index: 2;
+}
+
+/* 중앙 라인 */
+.timeline-line {
+    position: absolute;
+    top: 50%;
+    width: 77%;
+    height: 2px;
+    background: #838383;
+}
+
+/* 타임라인 아이템 */
+.timeline-item {
+    position: absolute;
+    width: 250px;
+    transform: translateY(-50%);
+}
+
+.timeline-item.top {
+    top: 42%;
+}
+
+.timeline-item.bottom {
+    top: 58%;
+}
+
+.dot {
+    width: 10px;
+    height: 10px;
+    background: #fff;
+    border-radius: 50%;
+    /* margin-bottom: 10px; */
+}
+.timelinedot {
+    width: 20px;
+    height: 20px;
+    background: #fff;
+    border-radius: 50%;
+    position: absolute;
+    top: 49%;
+    /* margin-bottom: 10px; */
+}
+.first {
+    left: 14%;
+}
+.second {
+    left: 30%;
+}
+.third {
+    left: 46%;
+}
+.fourth {
+    left: 64%;
+}
+
+.icon {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.15);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+/* 텍스트 */
+.timeline-item h4 {
+    font-size: 32px;
+    margin-bottom: 6px;
+}
+
+.timeline-item p {
+    font-size: 16px;
+    line-height: 1.6;
+    opacity: 0.9;
+}
+
+/* 로고 */
+.history-logo {
+    position: absolute;
+    right: 8%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.historycircle2 {
+    width: 344px;
+    height: 344px;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.historycircle {
+    width: 306px;
+    height: 306px;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.logo-circle {
+    width: 270px;
+    height: 270px;
+    border-radius: 50%;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 14px;
+}
