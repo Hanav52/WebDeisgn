@@ -1,0 +1,93 @@
+.research-section {
+    background: #000;
+    color: #fff;
+    padding: 160px 0;
+}
+
+.research-inner {
+    max-width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    gap: 120px;
+}
+
+/* 좌측 */
+.research-info {
+    width: 320px;
+}
+
+.research-info h2 {
+    font-size: 36px;
+    margin-bottom: 12px;
+}
+
+.research-info .en {
+    display: block;
+    font-size: 14px;
+    opacity: 0.7;
+    margin-bottom: 24px;
+}
+
+.research-info p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.research-info .desc {
+    margin-top: 20px;
+    font-size: 14px;
+    opacity: 0.8;
+}
+
+/* 카드 그리드 */
+.research-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 300px);
+    gap: 24px;
+}
+
+/* 카드 */
+.research-card {
+    position: relative;
+    background: #e5e5e5;
+    color: #111;
+    padding: 32px;
+    height: 260px;
+    border: 1px dashed #999;
+    transition: all 0.35s ease;
+    cursor: pointer;
+}
+
+.research-card .en {
+    display: block;
+    font-size: 13px;
+    margin: 8px 0 16px;
+    opacity: 0.7;
+}
+
+.research-card p {
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.research-card .icon {
+    position: absolute;
+    right: 24px;
+    bottom: 24px;
+    font-size: 28px;
+    opacity: 0.6;
+}
+
+/* 🔥 hover 효과 */
+.research-card:hover,
+.research-card.active {
+    background: #f07f23;
+    color: #fff;
+    border-color: transparent;
+}
+
+.research-card:hover .en,
+.research-card:hover p,
+.research-card:hover .icon {
+    opacity: 1;
+}
