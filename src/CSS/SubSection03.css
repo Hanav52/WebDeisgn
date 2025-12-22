@@ -42,7 +42,8 @@
 /* 카드 그리드 */
 .research-grid {
     display: grid;
-    grid-template-columns: repeat(2, 300px);
+    grid-template-columns: repeat(2, 380px); /* 가로 360 */
+    grid-auto-rows: 380px;                   /* 세로 360 */
     gap: 24px;
 }
 
@@ -51,11 +52,17 @@
     position: relative;
     background: #e5e5e5;
     color: #111;
-    padding: 32px;
-    height: 260px;
-    border: 1px dashed #999;
+    padding: 15px;
     transition: all 0.35s ease;
     cursor: pointer;
+}
+
+.research-card1 {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    /* padding: 15px; */
+    border: 1px dashed #999;
 }
 
 .research-card .en {
