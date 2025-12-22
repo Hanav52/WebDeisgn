@@ -1,3 +1,58 @@
+/* CSS 기본 셋팅 */
+@font-face {
+    font-family: 'AstaSans';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2505-1@1.0/AstaSans-Light.woff2') format('woff2');
+    font-weight: 300;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'AstaSans';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2505-1@1.0/AstaSans-Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'AstaSans';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2505-1@1.0/AstaSans-Medium.woff2') format('woff2');
+    font-weight: 500;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'AstaSans';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2505-1@1.0/AstaSans-SemiBold.woff2') format('woff2');
+    font-weight: 600;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'AstaSans';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2505-1@1.0/AstaSans-Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'AstaSans';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2505-1@1.0/AstaSans-ExtraBold.woff2') format('woff2');
+    font-weight: 800;
+    font-display: swap;
+}
+
+body{
+  font-family: 'AstaSans';
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 .section03 {
   background: #000;
   padding: 120px 0;
@@ -16,7 +71,7 @@
 .card {
   position: relative;
   overflow: hidden;
-  background: #b37a7a;
+  background: #282828;
   color: #fff;
   text-decoration: none;
 }
@@ -32,6 +87,7 @@
   transition: transform .6s ease, filter .6s ease;
   /* padding: 8px; */
 }
+
 .card .img2 {
   width: 100%;
   height: 80%;
@@ -44,12 +100,19 @@
 .card:hover img {
   transform: scale(1.08);
   filter: brightness(0.85);
+  height: 100%;
+}
+/* 세로가 긴 애들 */
+.card:hover .img2 {
+  transform: scale(1.08);
+  filter: brightness(0.85);
+  height: 100%;
 }
 
 /* 오버레이 */
 .overlay {
   position: absolute;
-  inset: auto 20px 20px 20px;
+  inset: 225px 20px 20px 20px;
   display: flex;
   align-items: flex-end;
   justify-content: space-between;
@@ -60,9 +123,31 @@
   display: block;
   font-size: 18px;
 }
+.hoverfont {
+  display: block;
+  font-size: 36px;
+  font-weight: bold;
+  padding-top: 18px;
+  padding-bottom: 30px;
+}
+.hoversmall {
+  display: block;
+  font-size: 27px;
+  font-weight: bold;
+  padding-top: 13px;
+  padding-bottom: 22px;
+}
 
 .category {
   font-size: 12px;
+  opacity: 0.7;
+}
+.overlay.drink-overlay-hover .category {
+  font-size: 16px;
+  opacity: 0.7;
+}
+.overlay.drink-overlay-hover.small .category {
+  font-size: 16px;
   opacity: 0.7;
 }
 
@@ -87,6 +172,16 @@
   height: 100%;
 }
 
+.img2-default,
+.img2-hover {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: opacity .6s ease, transform .6s ease;
+}
+
 .img-default,
 .img-hover {
   position: absolute;
@@ -101,8 +196,15 @@
   opacity: 0;
   transform: scale(1.05);
 }
+.img2-hover {
+  opacity: 0;
+  transform: scale(1.05);
+}
 
 .drink:hover .img-default {
+  opacity: 0;
+}
+.drink:hover .img2-default {
   opacity: 0;
 }
 
@@ -110,44 +212,111 @@
   opacity: 1;
   transform: scale(1);
 }
+.drink:hover .img2-hover {
+  opacity: 1;
+  transform: scale(1);
+}
 
 /* DRINK 텍스트 */
-.drink-overlay {
+.drink-overlay-hover {
   top: 50%;
   bottom: auto;
   transform: translateY(-50%);
   flex-direction: column;
   align-items: flex-start;
 }
-
-.drink-overlay p {
+/* 기본형태 */
+.drink-overlay-hover p {
   font-size: 13px;
   line-height: 1.5;
-  margin: 12px 0;
+  /* margin: 12px 0; */
+  opacity: 0;
+  transform: translateY(10px);
+  transition: .4s ease;
+}
+/* 긴 카드들 */
+.overlay.drink-overlay-hover p {
+  font-size: 16px;
+  line-height: 1.5;
+  /* margin: 12px 0; */
+  opacity: 0;
+  transform: translateY(10px);
+  transition: .4s ease;
+}
+/* 짧은 카드들 */
+.overlay.small p {
+  font-size: 12px;
+  line-height: 1.5;
+  /* margin: 12px 0; */
   opacity: 0;
   transform: translateY(10px);
   transition: .4s ease;
 }
 
-.drink:hover .drink-overlay p {
+.drink:hover .drink-overlay-hover p {
   opacity: 1;
   transform: translateY(0);
+  padding-bottom: 62px;
+}
+.drink:hover .small p {
+  opacity: 1;
+  transform: translateY(0);
+  padding-bottom: 22px;
 }
 
-.drink-overlay button {
+.drink-overlay-hover button {
   background: none;
-  border: 1px solid rgba(255,255,255,.5);
+  border: 1px solid rgba(255, 255, 255, .5);
   color: #fff;
   padding: 8px 14px;
-  font-size: 12px;
+  font-size: 15px;
+  width: 178px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
+
 /* section03 영역 설정 */
 /* .section03 {
   display: flex;
 } */
 .video {
-    position: absolute;
+  position: absolute;
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+/* .hoverbefore:hover  .hoverafter {
+  display: block;
+  
+} */
+
+.brand-line {
+  width: 100%;
+  height: 2px;
+  background: rgb(255, 255, 255);
+  margin-top: 5px ;
+  margin-bottom: 30px;
+}
+
+/* section03 긴 애들 */
+.overlay.drink-overlay-hover{
+  display: none;
+}
+.card.drink.tall:hover > .overlay.horizontal {
+  display: none;
+}
+.card.drink.tall:hover > .overlay.drink-overlay-hover {
+  display: block;
+}
+/* section03 짧은 애들 */
+.overlay.drink-overlay-hover{
+  display: none;
+}
+.card.drink:hover > .overlay.horizontal {
+  display: none;
+}
+.card.drink:hover > .overlay.drink-overlay-hover {
+  display: block;
 }

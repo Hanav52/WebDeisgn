@@ -1,6 +1,11 @@
 import '../CSS/main.css'
 import section033 from './section033.mp4'
 
+
+function mouseenterHandler() {
+    document.getElementById("message").textContent = "마우스 커서가 진입하였습니다";
+  }
+
 function Section03() {
   return (
     <section className='section03'>
