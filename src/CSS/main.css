@@ -54,6 +54,7 @@ body{
 }
 a {
   all: unset;
+  cursor: pointer;
 }
 /* Header 설정 */
 .head {
@@ -69,17 +70,23 @@ a {
 }
 /* 여기부터 시작 */
 .head-container {
-  margin: 39px 233px;
+  padding: 39px 13%;
   position: relative;
 }
 .amain {
   cursor: pointer;
 }
 .head-brandlogo {
-  width: 141px;
+  width: 11%;
   height: 32px;
-  background-image: url('../기타파일/동화약품로고.png');
-  background-size: cover;
+  flex-shrink: 0;
+  /* background-image: url('../기타파일/동화약품로고.png');
+  background-size: cover; */
+}
+.head-brandlogo img {
+  width: 100%;
+  height: auto;
+  display: block;
 }
 .head-last {
   display: flex;
@@ -95,8 +102,6 @@ a {
 .head-gnb {
   width: 744px;
   font-size: 18px;
-  display: flex;
-  justify-content: space-between;
   margin: 0 100px;
   /* position: relative; */
 }
@@ -132,6 +137,115 @@ input::placeholder {
   color: #fff;
 }
 
+ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* 헤더메뉴 */
+/* 전체 오버레이 */
+.sitemap-overlay {
+  width: auto;
+  height: auto;
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.4);
+  z-index: 9999;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.4s ease;
+}
+
+/* 열렸을 때 */
+.sitemap-overlay.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* 패널 */
+.sitemap-panel {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  display: flex;
+  transform: translateX(-100%);
+  transition: transform 0.5s ease;
+}
+
+/* 열림 */
+.sitemap-overlay.active .sitemap-panel {
+  transform: translateX(0);
+}
+
+/* 좌측 컬러 바 */
+.sitemap-side {
+  width: 360px;
+  background: linear-gradient(180deg, #005bac, #00b894);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* writing-mode: vertical-rl; */
+  letter-spacing: 4px;
+  gap: 20px;
+  font-size: 16px;
+}
+.spanline {
+  width: 40%;
+  height: 2px;
+  background: rgb(255, 255, 255);
+  margin-top: 5px ;
+}
+
+/* 콘텐츠 */
+.sitemap-content {
+  flex: 1;
+  padding: 120px 100px;
+  display: flex;
+  gap: 80px;
+}
+
+.sitemap-column h3 {
+  margin-bottom: 16px;
+}
+
+.sitemap-column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sitemap-column li {
+  margin-bottom: 12px;
+  cursor: pointer;
+}
+
+/* 닫기 버튼 */
+.sitemap-close {
+  position: absolute;
+  top: 40px;
+  right: 40px;
+  font-size: 28px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  z-index: 10;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 /* section01 영역 설정들 */
 .swiper {
   width: 100%;
@@ -160,8 +274,12 @@ input::placeholder {
 }
 .slider-box {
   position: relative;
-  width: 100%;
   margin: 0 auto;
+}
+.btnbox {
+  width: auto;
+  margin-left: 76px;
+  margin-right: 76px;
 }
 .slide-inner {
   position: absolute;
@@ -218,10 +336,10 @@ input::placeholder {
   font-size: 24px;
   color: white;
   cursor: pointer;
-  z-index: 10;
+  z-index: 8;
 }
-.swiper-button-prev { left: 20px; }
-.swiper-button-next { right: 20px; }
+.swiper-button-prev { left: 72px; }
+.swiper-button-next { right: 72px; }
 
 
 .section01-scroll {
@@ -363,6 +481,7 @@ div .section01-text-04 {
   margin-top: 5px ;
 }
 
+
 .section04-brand-area {
   margin-top: 76px;
   height: 320px;
@@ -393,4 +512,83 @@ display: flex;
   width: 100%;
   height: 294px;
   background-color: black;
+}
+
+
+
+
+
+
+
+
+
+
+.sitemap-list-wrap {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    z-index: 5;
+}
+.sitemap-list-wrap .d-t {
+    min-width: 1370px;
+}
+.d-t {
+    display: table;
+    width: 100%;
+    height: 100%;
+    table-layout: fixed;
+}
+.d-t .d-c {
+    display: table-cell;
+    width: 100%;
+    vertical-align: middle;
+}
+.sitemap-list-wrap .map-list > ul {
+    padding: 0 105px;
+    box-sizing: border-box;
+}
+ul, ol, dl {
+    list-style-type: none;
+}
+
+.sitemap-list-wrap .map-list > ul > li {
+    float: left;
+    width: 20%;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+.sitemap-list-wrap .map-list dt {
+    padding-bottom: 34px;
+    border-bottom: 2px solid #e5e5e5;
+    font-size: 36px;
+    color: #222;
+    font-weight: 500;
+    line-height: 40px;
+    letter-spacing: -0.1em;
+}
+
+.sitemap-list-wrap .map-list dt span {
+    display: block;
+    margin-bottom: 15px;
+    font-size: 18px;
+    font-family: 'Roboto';
+    color: #aaa;
+    line-height: 18px;
+    font-weight: 400;
+    letter-spacing: 8.8px;
+}
+
+.sitemap-list-wrap .map-list dt + dd {
+    margin-top: 30px;
+}
+
+.sitemap-list-wrap .map-list dd a {
+    display: inline-block;
+    height: 36px;
+    font-size: 18px;
+    color: #666;
+    line-height: 36px;
+    box-sizing: border-box;
+    border-bottom: 3px solid #fff;
 }
