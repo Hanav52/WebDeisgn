@@ -11,22 +11,15 @@
     position: relative;
     height: 100vh;
     background: url('../기타파일/section02.jpg') center/cover no-repeat;
-  background-size: cover;
-
+    background-size: cover;
     color: #fff;
     overflow: hidden;
 }
-/* height: 1000px;
-  background-image: url('../기타파일/section02.jpg');
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  filter: brightness(20%); */
 
 .history-overlay {
     position: absolute;
     inset: 0;
-    background: rgba(0, 0, 0, 0.65);
+    background: rgba(0, 0, 0, 0.8);
     z-index: 1;
 }
 
@@ -43,6 +36,38 @@
     width: 77%;
     height: 2px;
     background: #838383;
+}
+.first-line {
+    position: absolute;
+    top: 32%;
+    width: 29%;
+    transform: translateX(50%);
+    border-left: 2px solid #838383;
+    height: 175px;
+}
+.second-line {
+    position: absolute;
+    top: 50%;
+    width: 61%;
+    transform: translateX(50%);
+    border-left: 2px solid #838383;
+    height: 175px;
+}
+.third-line {
+    position: absolute;
+    top: 32%;
+    width: 93%;
+    transform: translateX(50%);
+    border-left: 2px solid #838383;
+    height: 175px;
+}
+.fourth-line {
+    position: absolute;
+    top: 50%;
+    width: 129%;
+    transform: translateX(50%);
+    border-left: 2px solid #838383;
+    height: 175px;
 }
 
 /* 타임라인 아이템 */
@@ -76,17 +101,68 @@
     top: 49%;
     /* margin-bottom: 10px; */
 }
-.first {
+.first1 {
     left: 14%;
 }
-.second {
+.first-first {
+    width: 100px;
+    height: 100px;
+    left: 12%;
+    background: #313131;
+    border-radius: 50%;
+    position: absolute;
+    top: 22%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.second2 {
     left: 30%;
 }
-.third {
+.second-first {
+    width: 100px;
+    height: 100px;
+    left: 44%;
+    background: #313131;
+    border-radius: 50%;
+    position: absolute;
+    top: 22%;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.third3 {
     left: 46%;
 }
-.fourth {
+.third-first {
+    width: 100px;
+    height: 100px;
+    left: 28%;
+    background: #313131;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 2;
+    top: 68%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.fourth4 {
     left: 64%;
+}
+.fourth-first {
+    width: 100px;
+    height: 100px;
+    left: 62%;
+    background: #313131;
+    border-radius: 50%;
+    position: absolute;
+    top: 68%;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .icon {
@@ -147,4 +223,20 @@
     justify-content: center;
     text-align: center;
     font-size: 14px;
+    flex-direction: column;
+    background-color: white;
+}
+.logo-circle p:first-of-type {
+    font-size: 32px;
+    font-weight: 700;
+    color: #000;
+}
+.logo-circle p:last-of-type {
+    color: #000;
+    font-size: 14px;
+}
+.logo-circle img {
+    filter: 
+    brightness(0)
+    saturate(0);
 }

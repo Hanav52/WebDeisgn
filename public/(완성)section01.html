@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 스와이퍼 CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"/>
+    <!-- 스와이퍼 CSS -->
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.8.4/swiper-bundle.min.css"> -->
+    <link rel="stylesheet" href="../src/CSS/main.css">
+    <link rel="stylesheet" href="../src/CSS/Footer.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- section01 영역 -->
+    <section>
+        <div class="slider-box">
+            <div class="btnbox">
+                <div class="swiper-button-prev"><i class="fas fa-angle-left"></i></div>
+                <div class="swiper-button-next"><i class="fas fa-angle-right"></i></div>
+            </div>
+
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <!-- 1번슬라이드 -->
+                    <div class="swiper-slide">
+                        <img src="../src/기타파일/section01.jpg" alt="section01">
+                        <div class="slide-inner section01-text">
+                            <div class="section01-text-01">No.1</div>
+                            <div class="section01-text-03">Trusted</div>
+                            <div class="section01-text-04">HealthHeritage</div>
+                            <div class="section01-text-02">당신의 일상을 지켜온 120년 전통의 건강 파트너<br />세대를 넘어 이어진 신뢰로 더 나은 내일을
+                                만듭니다.</div>
+                        </div>
+                        <div class="section01-scroll">
+                            <div class="scroll-01">↓</div>
+                            <div>SCROLL</div>
+                        </div>
+                    </div>
+                    <!-- 2번슬라이드 -->
+                    <div class="swiper-slide">
+                        <img src="../src/기타파일/section01.jpg" alt="section01">
+                        <div class="slide-inner section01-text">
+                            <div class="section01-text-01">깨움</div>
+                            <div class="first">새벽을 여는 종처럼, 우리는 깨워 왔습니다.<br/>
+                                그 어떤 도전도 두려워하지 않으며<br/>
+                                이제까지 없었던 새로움을 깨워왔습니다.
+                            </div>
+                            <div class="second">그리하여 우리와 만나는 세상이 보다 행복할 수 있도록</div>
+                            <div class="third" style="color: white;">우리는 건강을 깨워왔습니다.</div>
+                        </div>
+                        <div class="section01-scroll">
+                            <div class="scroll-01">↓</div>
+                            <div>SCROLL</div>
+                        </div>
+                    </div>
+                    <!-- 3번슬라이드 -->
+                    <div class="swiper-slide">
+                        <img src="../src/기타파일/section01.jpg" alt="secion01">
+                        <div class="slide-inner section01-text">
+                            <div class="section01-text-01">울림</div>
+                            <div class="first">자신을 희생하여 아름다운 소리를 전하는 종처럼,<br />
+                                우리는 우리의 깨움을 더 멀리, 더 넓게, 더 깊게 울리고 있습니다.
+                            </div>
+                            <div class="second">그 어떤 도전도 두려워하지 않으며<br />
+                                이제까지 없었던 새로움을 깨워왔습니다.</div>
+                            <div class="third" style="color: white;">오늘도 더 큰 울림을 전하고 있습니다.</div>
+                        </div>
+                        <div class="section01-scroll">
+                            <div class="scroll-01">↓</div>
+                            <div>SCROLL</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+
+<!-- Initialize Swiper -->
+<script type="module">
+  import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.mjs'
+  var swiper = new Swiper(".swiper-container", {
+    slidesPerView: 1,
+    loop: true,
+    autoplay: { delay:3000, disableOnInteraction:false },
+    effect: "fade",
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+  });
+</script>
+
+</body>
+
+</html>

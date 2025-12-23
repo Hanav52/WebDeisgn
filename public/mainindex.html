@@ -9,6 +9,8 @@
     <!-- 스와이퍼 CSS -->
     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.8.4/swiper-bundle.min.css"> -->
     <link rel="stylesheet" href="../src/CSS/main.css">
+    <link rel="stylesheet" href="../src/CSS/(완성)section03.css">
+    <link rel="stylesheet" href="../src/CSS/(완성)section02.css">
     <link rel="stylesheet" href="../src/CSS/Footer.css">
     <title>동화약품</title>
   </head>
@@ -271,14 +273,256 @@
     </section>
 
     <!-- section02 영역 -->
-    <section>
+    <section class="history">
+        <div class="history-overlay"></div>
+
+        <div class="history-inner">
+
+            <!-- 타임라인 라인 -->
+            <div class="timeline-line"></div>
+            <div class="first-line"></div>
+            <div class="first-first">
+                <img src="../src/기타파일/drop.png" width="58px" height="58px">
+            </div>
+            <div class="second-line"></div>
+            <div class="second-first">
+                <img src="../src/기타파일/file-plus-02.png" width="58px" height="58px">
+            </div>
+            <div class="third-line"></div>
+            <div class="third-first">
+                <img src="../src/기타파일/box.png" width="58px" height="58px">
+            </div>
+            <div class="fourth-line"></div>
+            <div class="fourth-first">
+                <img src="../src/기타파일/home-02.png" width="58px" height="58px">
+            </div>
+            
+
+            <!-- 1897 -->
+            <div class="timelinedot first1"></div>
+            <div class="timelinedot second2"></div>
+            <div class="timelinedot third3"></div>
+            <div class="timelinedot fourth4"></div>
+
+            <div class="timeline-item bottom" style="left: 14%;">
+                <div class="content">
+                    <h4>1897년</h4>
+                    <p>궁중 선전소 노천 민변호, 대한민국<br>최초 신약 '활명수'
+                        개발</p>
+                </div>
+            </div>
+
+            <!-- 1960s -->
+            <div class="timeline-item top" style="left: 30%;">
+                <div class="content">
+                    <p>동화약품 공업주식회사로 상호 변경</p>
+                    <h4>1962s</h4>
+                </div>
+            </div>
+
+            <!-- 1990s -->
+            <div class="timeline-item bottom" style="left: 46%;">
+                <div class="content">
+                    <h4>1990s</h4>
+                    <p>
+                        한국 기네스북 4개 부문 등재<br>
+                        까스 활명수 발매<br>
+                        제네릭 의약품 생산 확대
+                    </p>
+                </div>
+            </div>
+
+            <!-- 2020s -->
+            <div class="timeline-item top" style="left: 64%;">
+                <div class="content">
+                    <p>베트남 약국 프랜차이즈<br>매장 1호점 오픈</p>
+                    <h4>2020s</h4>
+                </div>
+            </div>
+
+            <!-- 로고 -->
+            <div class="history-logo">
+                <div class="historycircle2">
+                    <div class="historycircle">
+                        <div class="logo-circle">
+                            <img src="../src/기타파일/section2-logo.png">
+                            <p>동화약품</p>
+                            <p>SINCE 1897</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
     
     <!-- section03 영역 -->
     <section class="section03">
-      <video class="video" autoplay muted loop>
-        <source src="../src/Section/section033.mp4" type="video/mp4"/>
-      </video>
+        <video class="video" autoplay muted loop>
+            <source src="../src/Section/section033.mp4" type="video/mp4"/>
+        </video>
+        <!-- display를 grid 형태로 구성하여 컨텐츠들을 나열 -->
+        <div class="grid">
+
+            <!-- BEAUTY -->
+            <a class="card drink tall" href="#">
+                <div class="image-wrap">
+                    <img src="../src/기타파일/웹디자인 로고/더마코스메틱.png" alt="" class="img-default">
+                    <img src="../src/기타파일/웹디자인 로고/더마코스메틱.png" alt="더마코스메틱" class="img-hover">
+                </div>
+                
+                <div class="overlay horizontal">
+                    <div class="category">BEAUTY</div>
+                        <strong>더마코스메틱</strong>
+                        <span class="arrow">→</span>
+                </div>
+                <div class="overlay drink-overlay-hover">
+                    <span class="category">BEAUTY</span>
+                        <div class="hoverfont">더마코스메틱</div>
+                         <div class="brand-line"></div>
+                        <p>
+                            피부 본연의 힘을 키우는 기능성 스킨케어<br>
+                            민감 피부를 위한 저자극 더마 솔루션
+                        </p>
+                        <button >
+                            <span>자세히 보기</span> 
+                            <span>→</span>
+                        </button>
+                </div>
+            </a>
+
+            <!-- EMALL -->
+            <a class="card drink" href="#">
+                <div class="image-wrap">
+                    <img src="../src/기타파일/웹디자인 로고/emall.png" alt="emall" class="img2 img2-default">
+                    <img src="../src/기타파일/웹디자인 로고/emall.png" alt="emall" class="img2 img2-hover">
+                </div>
+                <div class="overlay horizontal">
+                    <span class="category">EMALL</span>
+                    <strong>동화Mall</strong>
+                    <span class="arrow">→</span>
+                </div>
+                <div class="overlay drink-overlay-hover small">
+                    <span class="category">EMALL</span>
+                    <div class="hoversmall">동화Mall</div>
+                    <div class="brand-line"></div>
+                    <p>
+                        약국·약사용 동화약품 온라인 주문 채널<br>
+                        의약품 주문·결제를 한 번에 처리하는 플랫폼
+                    </p>
+                    <button >
+                            <span>자세히 보기</span> 
+                            <span>→</span>
+                    </button>
+                </div>
+            </a>
+
+            <!-- DRINK -->
+            <a class="card drink tall" href="#">
+                <div class="image-wrap">
+                    <img src="../src/기타파일/웹디자인 로고/활명수쓴.png" alt="" class="img-default">
+                    <img src="../src/기타파일/웹디자인 로고/활명수쓴.png" alt="활명수" class="img-hover">
+                </div>
+                
+                <div class="overlay horizontal">
+                    <span class="category">DRINK</span>
+                        <strong>활명수</strong>
+                        <span class="arrow">→</span>
+                </div>
+                <div class="overlay drink-overlay-hover">
+                    <span class="category">DRINK</span>
+                        <div class="hoverfont">활명수</div>
+                        <div class="brand-line"></div>
+                        <p>
+                            인류의 건강과 생명에 기여하는<br>
+                            원료의약품 / 일반의약품 제조
+                        </p>
+                        <button>
+                            <span>자세히 보기</span>
+                            <span>→</span>
+                        </button>
+                </div>
+            </a>
+
+            <!-- MEDICINE - 알보칠 -->
+            <a class="card drink tall" href="#">
+                <div class="image-wrap">
+                    <img src="../src/기타파일/웹디자인 로고/알보칠.png" alt="" class="img-default">
+                    <img src="../src/기타파일/웹디자인 로고/알보칠.png" alt="활명수" class="img-hover">
+                </div>
+                
+                <div class="overlay horizontal">
+                    <span class="category">MEDICINE</span>
+                        <strong>알보칠</strong>
+                        <span class="arrow">→</span>
+                </div>
+                <div class="overlay drink-overlay-hover">
+                    <span class="category">MEDICINE</span>
+                        <div class="hoverfont">알보칠</div>
+                        <div class="brand-line"></div>
+                        <p>
+                            입 안 통증을 완화하는 구내염 치료제<br>
+                            염증 부위를 집중 관리하는 구강 솔루션
+                        </p>
+                        <button >
+                            <span>자세히 보기</span> 
+                            <span>→</span>
+                        </button>
+                </div>
+            </a>
+
+            <!-- MEDICINE - 후시딘 -->
+            <a class="card drink" href="#">
+                <div class="image-wrap">
+                    <img src="../src/기타파일/웹디자인 로고/후시딘.png" alt="MEDICINE" class="img2 img2-default">
+                    <img src="../src/기타파일/웹디자인 로고/후시딘.png" alt="MEDICINE" class="img2 img2-hover">
+                </div>
+                <div class="overlay horizontal">
+                    <span class="category">MEDICINE</span>
+                    <strong>후시딘</strong>
+                    <span class="arrow">→</span>
+                </div>
+                <div class="overlay drink-overlay-hover small">
+                    <span class="category">MEDICINE</span>
+                    <div class="hoversmall">후시딘</div>
+                    <div class="brand-line"></div>
+                    <p>
+                        상처 회복을 돕는 대표 항생제 연고<br>
+                        안전하게 지켜주는 케어 브랜드
+                    </p>
+                    <button >
+                            <span>자세히 보기</span> 
+                            <span>→</span>
+                    </button>
+                </div>
+            </a>
+
+            <!-- TOOTH -->
+            <a class="card drink" href="#">
+                <div class="image-wrap">
+                    <img src="../src/기타파일/웹디자인 로고/잇치.png" alt="MEDICINE" class="img2 img2-default">
+                    <img src="../src/기타파일/웹디자인 로고/잇치.png" alt="MEDICINE" class="img2 img2-hover">
+                </div>
+                <div class="overlay horizontal">
+                    <span class="category">TOOTH</span>
+                    <strong>잇치</strong>
+                    <span class="arrow">→</span>
+                </div>
+                <div class="overlay drink-overlay-hover small">
+                    <span class="category">TOOTH</span>
+                    <div class="hoversmall">잇치</div>
+                    <div class="brand-line"></div>
+                    <p>
+                        잇몸 고민을 집중 케어하는 잇몸 치료제<br>
+                        치주 건강을 관리하는 구강 헬스케어 브랜드
+                    </p>
+                    <button >
+                            <span>자세히 보기</span> 
+                            <span>→</span>
+                    </button>
+                </div>
+            </a>
+
+        </div>
     </section>
     
     <!-- section04 영역 -->
