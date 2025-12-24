@@ -1,0 +1,130 @@
+/* CSS 기본 셋팅 */
+@font-face {
+    font-family: 'AstaSans';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2505-1@1.0/AstaSans-Light.woff2') format('woff2');
+    font-weight: 300;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'AstaSans';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2505-1@1.0/AstaSans-Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'AstaSans';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2505-1@1.0/AstaSans-Medium.woff2') format('woff2');
+    font-weight: 500;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'AstaSans';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2505-1@1.0/AstaSans-SemiBold.woff2') format('woff2');
+    font-weight: 600;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'AstaSans';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2505-1@1.0/AstaSans-Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'AstaSans';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2505-1@1.0/AstaSans-ExtraBold.woff2') format('woff2');
+    font-weight: 800;
+    font-display: swap;
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    height: 837px;
+}
+body{
+    background-color: #161616;
+    position: relative;
+    font-family: 'AstaSans';
+}
+
+.swiper {
+    width: 100%;
+    height: 337px;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #161616;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 83px;
+    height: 250px;
+    object-fit: cover;
+    transform: translateY(-20%);
+}
+
+/* .swiper-wrapper {
+    height: 337px;
+} */
+
+#wrap {
+    width: 100%;
+    height: 837px;
+}
+
+.upupbox {
+    color: #fff;
+    margin: 141px 542px 119px 352px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.upupbox .first {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.upupbox .second {
+    font-size: 32px;
+    font-weight: 500;
+}
+
+.section04-head {
+    font-size: 101.92px;
+    font-weight: 900;
+    color: #fff;
+}
+.section04-head-1 {
+    font-size: 101.92px;
+    font-weight: 900;
+    color: #919191;
+}
+.abcdefg {
+    font-size: 20px;
+    color: #fff;
+    transform: translateX(100%) translateY(-200%);
+    text-align: left;
+}
+.abcdefg p:first-child {
+    color: #919191;
+    font-size: 20px;
+}
+.abcdefg p:last-of-type {
+    font-size: 24px;
+}
