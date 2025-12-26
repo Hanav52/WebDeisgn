@@ -6,11 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"/>
     <!-- Link Swiper's CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"/>
-    <link rel="stylesheet" href="../src/CSS/SubSection04.css"/>
+    <link rel="stylesheet" href="../src/CSS/(완성)SubSection04.css"/>
 </head>
 
 <body>
-    <div id="wrap">
+    <div id="section04">
         <div class="upupbox">
             <span class="first">대표 브랜드</span>
             <span class="second">동화약품의 대표 브랜드들은 120년 전통의 품질과<br>
@@ -141,6 +141,13 @@
                         <p>후시딘</p>
                     </div>
                 </div>
+
+            </div>
+            <div class="autoplay-progress">
+                <svg viewbox="0 0 48 48">
+                    <circle cx="24" cy="24" r="20"></circle>
+                </svg>
+                <span></span>
             </div>
         </div>
     </div>
@@ -151,8 +158,16 @@
 
     <!-- Initialize Swiper -->
     <script>
+        const progressCircle = document.querySelector(".autoplay-progress svg");
+        const progressContent = document.querySelector(".autoplay-progress span");
         var swiper = new Swiper(".mySwiper", {
             slidesPerView: 5,
+            loop: true,
+            centeredSlides: true,
+            autoplay: {
+            delay: 1500,
+            disableOnInteraction: false,
+            },
             // spaceBetween: 30,
             freeMode: true,
             
@@ -160,6 +175,12 @@
             //     el: ".swiper-pagination",
             //     clickable: true,
             // },
+            on: {
+            autoplayTimeLeft(s, time, progress) {
+                progressCircle.style.setProperty("--progress", 1 - progress);
+                progressContent.textContent = `${Math.ceil(time / 1000)}s`;
+            },
+            },
         });
     </script>
 </body>

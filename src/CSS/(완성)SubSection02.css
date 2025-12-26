@@ -57,7 +57,7 @@ a {
   cursor: pointer;
 }
 
-#wrap {
+#section02 {
     display: flex;
     position: relative;
     flex-direction: column;

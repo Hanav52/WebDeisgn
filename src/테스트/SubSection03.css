@@ -1,0 +1,199 @@
+/* CSS 기본 셋팅 */
+@font-face {
+    font-family: 'AstaSans';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2505-1@1.0/AstaSans-Light.woff2') format('woff2');
+    font-weight: 300;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'AstaSans';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2505-1@1.0/AstaSans-Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'AstaSans';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2505-1@1.0/AstaSans-Medium.woff2') format('woff2');
+    font-weight: 500;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'AstaSans';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2505-1@1.0/AstaSans-SemiBold.woff2') format('woff2');
+    font-weight: 600;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'AstaSans';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2505-1@1.0/AstaSans-Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'AstaSans';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2505-1@1.0/AstaSans-ExtraBold.woff2') format('woff2');
+    font-weight: 800;
+    font-display: swap;
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+  font-family: 'AstaSans';
+}
+a {
+  all: unset;
+  cursor: pointer;
+}
+
+.research-section {
+    background: #242424;
+    color: #fff;
+    padding: 160px 0;
+}
+
+.research-inner {
+    max-width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    gap: 41px;
+    justify-content: center;
+}
+
+/* 좌측 */
+.research-info {
+    width: 400px;
+}
+
+.research-info h2 {
+    font-size: 48px;
+    margin-bottom: 12px;
+}
+
+.research-info .en {
+    display: block;
+    font-size: 24px;
+    opacity: 0.7;
+    margin-bottom: 24px;
+}
+
+.research-info p {
+    font-size: 24px;
+    line-height: 1.6;
+}
+
+.research-info .desc {
+    margin-top: 20px;
+    font-size: 24px;
+    /* opacity: 0.8; */
+}
+
+/* 카드 그리드 */
+.research-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 380px); /* 가로 360 */
+    grid-auto-rows: 380px;                   /* 세로 360 */
+    gap: 24px;
+}
+
+/* 카드 */
+.research-card {
+    position: relative;
+    background: #e5e5e5;
+    color: #111;
+    padding: 15px;
+    transition: all 0.35s ease;
+    cursor: pointer;
+}
+
+.research-card1 {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 22px;
+    border: 1px dashed #999;
+}
+
+.research-card .en {
+    display: block;
+    font-size: 13px;
+    margin: 8px 0 16px;
+    opacity: 0.7;
+}
+
+.research-card p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.research-card .icon,
+.icon2,
+.icon3,
+.icon4,
+.icon5,
+.icon6 {
+    width: 70px;
+    height: 70px;
+    margin: 17px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    font-size: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.research-card1 h3 {
+    font-size: 32px;
+}
+
+/* 🔥 hover 효과 */
+.research-card:hover,
+.research-card.active {
+    background: #f07f23;
+    color: #fff;
+    border-color: transparent;
+}
+.research-card1:hover,
+.research-card1.active {
+    border-color: transparent;
+}
+
+.research-card:hover .en,
+.research-card:hover p,
+.research-card:hover .icon {
+    opacity: 1;
+}
+.research-card1:hover > .icon {
+    content: url("../기타파일/webdesignlogo/dna-white.png");
+}
+.research-card1:hover > .icon2 {
+    content: url("../기타파일/secondcard-white.png");
+}
+.research-card1:hover > .icon3 {
+    content: url("../기타파일/medicine-white.png");
+}
+.research-card1:hover > .icon4 {
+    content: url("../기타파일/plant-white.png");
+}
+.research-card1:hover > .icon5 {
+    content: url("../기타파일/medi-whitepng.png");
+}
+.research-card1:hover > .icon6 {
+    content: url("../기타파일/search-white.png");
+}
+.research-card1:hover {
+
+}

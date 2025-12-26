@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../src/CSS/SubSection05.css">
+    <title>Document</title>
+    <script src="../src/JS/SubSection05.js"></script>
+</head>
+<body>
+    <div id="section05">
+        <div class="section05-upbox">
+            <div class="section05-upbox-left">
+                <span>
+                    주요 연구과제
+                </span>
+            </div>
+            <div class="sectino05-upbox-right">
+                <button class="tab active" data-target="pipe1">혁신신약 파이프라인</button>
+                <button class="tab" data-target="pipe2">개량신약 파이프라인</button>
+                <button class="tab" data-target="pipe3">기능성 소재 파이프라인</button>
+            </div>
+        </div>
+        <div class="section05-downbox pipeline-contents">
+            <!-- 혁신신약 파이프라인 -->
+            <table class="pipeline-table active" id="pipe1">
+                <thead>
+                    <tr>
+                        <th>Project</th>
+                        <th>Indication</th>
+                        <th colspan="5" class="stages">
+                            <span>Hit</span>
+                            <span>Lead</span>
+                            <span>Candidate</span>
+                            <span>Preclinical</span>
+                            <span>Clinical</span>
+                        </th>
+                    </tr>
+                </thead>
+        
+                <tbody>
+                    <tr>
+                        <td>DW2008</td>
+                        <td>천식</td>
+                        <td colspan="5" class="stage-cell">
+                            <div class="bar full"></div>
+                            <div class="barbar"></div>
+                        </td>
+                    </tr>
+        
+                    <tr>
+                        <td>DW1023</td>
+                        <td>항암제</td>
+                        <td colspan="5" class="stage-cell">
+                            <div class="barbar"></div>
+                            <div class="bar clinical"></div>
+                        </td>
+                    </tr>
+        
+                    <tr>
+                        <td>DW1024</td>
+                        <td>면역질환</td>
+                        <td colspan="5" class="stage-cell">
+                            <div class="barbar"></div>
+                            <div class="bar candidate"></div>
+                        </td>
+                    </tr>
+        
+                    <tr>
+                        <td>DW1025</td>
+                        <td>천식</td>
+                        <td colspan="5" class="stage-cell">
+                            <div class="barbar"></div>
+                            <div class="bar lead"></div>
+                        </td>
+                    </tr>
+        
+                    <tr>
+                        <td>DW1030</td>
+                        <td>근감소증</td>
+                        <td colspan="5" class="stage-cell">
+                            <div class="barbar"></div>
+                            <div class="bar lead"></div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <!-- 개량신약 파이프라인 -->
+            <table class="pipeline-table" id="pipe2">
+                <thead>
+                    <tr>
+                        <th>Project</th>
+                        <th>Indication</th>
+                        <th colspan="5" class="stages">
+                            <span>Hit</span>
+                            <span>Lead</span>
+                            <span>Candidate</span>
+                            <span>Preclinical</span>
+                            <span>Clinical</span>
+                        </th>
+                    </tr>
+                </thead>
+        
+                <tbody>
+                    <tr>
+                        <td>DW6012</td>
+                        <td>당뇨</td>
+                        <td colspan="5" class="stage-cell">
+                            <div class="barbar"></div>
+                            <div class="bar full"></div>
+                        </td>
+                    </tr>
+        
+                    <tr>
+                        <td>DW6013</td>
+                        <td>당뇨</td>
+                        <td colspan="5" class="stage-cell">
+                            <div class="barbar"></div>
+                            <div class="bar clinical"></div>
+                        </td>
+                    </tr>
+        
+                    <tr>
+                        <td>DW6014</td>
+                        <td>당뇨</td>
+                        <td colspan="5" class="stage-cell">
+                            <div class="barbar"></div>
+                            <div class="bar candidate"></div>
+                        </td>
+                    </tr>
+        
+                    <tr>
+                        <td>DW6015</td>
+                        <td>당뇨</td>
+                        <td colspan="5" class="stage-cell">
+                            <div class="barbar"></div>
+                            <div class="bar lead"></div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <!-- 기능성 소재 파이프라인 -->
+            <table class="pipeline-table" id="pipe3">
+                <thead>
+                    <tr>
+                        <th>Project</th>
+                        <th>Indication</th>
+                        <th colspan="5" class="stages">
+                            <span>Hit</span>
+                            <span>Lead</span>
+                            <span>Candidate</span>
+                            <span>Preclinical</span>
+                            <span>Clinical</span>
+                        </th>
+                    </tr>
+                </thead>
+        
+                <tbody>
+                    <tr>
+                        <td>DW2009</td>
+                        <td>인지기능</td>
+                        <td colspan="5" class="stage-cell">
+                            <div class="barbar"></div>
+                            <div class="bar full"></div>
+                        </td>
+                    </tr>
+        
+                    <tr>
+                        <td>DW2012</td>
+                        <td>근력개선</td>
+                        <td colspan="5" class="stage-cell">
+                            <div class="barbar"></div>
+                            <div class="bar clinical"></div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            
+        </div>
+    </div>
+<!-- <script>
+    // function active () {
+    //     const tabbt = document.querySelector('.tab');
+    //     console.log(tabbt);
+    //     tabbt.classList.add('active');
+
+    //     const btn = document.querySelector('.pipeline-table');
+    //     console.log(btn);
+    //     btn.classList.add('active');
+    // }
+
+    // const btn = document.querySelectorAll('.tabs');
+
+    // btn.forEach(button => {
+    //     button.addEventListener('click', function(event) {
+    //         const parentCompo = event.target.parentNode;
+    //         console.log(parentCompo);
+
+    //         const childText = parentCompo.querySelector('')
+    //     })
+    // })
+</script> -->
+
+</body>
+</html>
