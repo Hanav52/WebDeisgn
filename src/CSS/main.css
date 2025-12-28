@@ -76,13 +76,13 @@ a {
 .amain {
   cursor: pointer;
 }
-.head-brandlogo {
+/* .head-brandlogo {
   width: 11%;
   height: 32px;
   flex-shrink: 0;
   /* background-image: url('../기타파일/동화약품로고.png');
   background-size: cover; */
-}
+/* } */
 .head-brandlogo img {
   width: 100%;
   height: auto;
@@ -105,9 +105,32 @@ a {
   margin: 0 100px;
   /* position: relative; */
 }
+/* .head-brand {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.head-gnb {
+  width: auto;
+  margin: 0;
+  font-size: 16px;
+}
+
+.head-gnb ul {
+  gap: 40px;
+} */
+
+.head-brandlogo {
+  width: 150px;
+  height: auto;
+}
+
+
+
 .head-hamburger {
   display: flex;
-  gap: 10px;
+  gap: 25px;
 }
 
 .head-hamburger a {
@@ -124,7 +147,7 @@ a {
   /* color: rgb(255, 255, 255); */
   cursor: pointer;
 }
-.head-search input {
+/* .head-search input {
   width: 250px;
   height: 30px;
   background-color: transparent;
@@ -135,6 +158,19 @@ a {
 input::placeholder {
   padding-left: 20px;
   color: #fff;
+} */
+
+.head-search input {
+  width: 250px;
+  height: 36px;
+  background-color: transparent;
+  border-radius: 23.5px;
+  border: 1px solid #ddd;
+  color: #fff;
+}
+
+input::placeholder {
+  color: #aaa;
 }
 
 ul {
@@ -285,6 +321,134 @@ ul {
     gap: 12px;
   }
 }
+/* 메뉴창 반응형 */
+/* =========================
+   Sitemap Responsive Fix
+   ========================= */
+@media (max-width: 1024px) {
+
+  /* table 구조 해제 */
+  .sitemap-list-wrap .d-t,
+  .sitemap-list-wrap .d-c {
+    display: block;
+    width: 100%;
+    min-width: 0;
+  }
+
+  /* ul을 flex 컨테이너로 */
+  .sitemap-list-wrap .map-list > ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 0 40px;
+    gap: 40px;
+  }
+
+  /* li 가로 카드화 */
+  .sitemap-list-wrap .map-list > ul > li {
+    float: none;
+    width: calc(50% - 20px); /* 2열 */
+    padding: 0;
+  }
+
+  /* 제목 크기 축소 */
+  .sitemap-list-wrap .map-list dt {
+    font-size: 26px;
+    line-height: 32px;
+  }
+}
+@media (max-width: 640px) {
+
+  .sitemap-list-wrap .map-list > ul > li {
+    width: 100%;
+  }
+
+  .sitemap-list-wrap .map-list > ul {
+    padding: 0 24px;
+  }
+
+  .sitemap-list-wrap .map-list dt {
+    font-size: 22px;
+  }
+
+  .sitemap-list-wrap .map-list dd a {
+    font-size: 16px;
+  }
+}
+
+
+/* -------헤더 메뉴창 테스트 */
+/* .menu-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.4s ease;
+  z-index: 1000;
+}
+
+.menu-overlay.is-open {
+  opacity: 1;
+  visibility: visible;
+}
+.menu-panel {
+  position: absolute;
+  inset: 0;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transform: translateY(-100%);
+  transition: transform 0.4s ease;
+}
+
+.menu-overlay.is-open .menu-panel {
+  transform: translateY(0);
+}
+.menu-nav ul {
+  display: flex;
+  gap: 48px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu-nav a {
+  font-size: 24px;
+  font-weight: 600;
+  color: #111;
+  text-decoration: none;
+}
+.menu-close {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  font-size: 32px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+@media (max-width: 768px) {
+
+  .menu-nav ul {
+    flex-direction: column;
+    gap: 24px;
+    align-items: center;
+  }
+
+  .menu-nav a {
+    font-size: 20px;
+  }
+} */
+
+
+
+
+
+
+
 
 
 
@@ -500,6 +664,12 @@ div .section01-text-04 {
     opacity: 1;
   }
 }
+@media (max-width: 1000px) {
+  .section01-text-02 {
+    display: none;
+  }
+}
+
 
 
 

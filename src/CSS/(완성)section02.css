@@ -9,7 +9,7 @@
 
 .history {
     position: relative;
-    height: 100vh;
+    height: 1000px;
     background: url('../기타파일/section02.jpg') center/cover no-repeat;
     background-size: cover;
     color: #fff;
@@ -195,6 +195,91 @@
     top: 50%;
     transform: translateY(-50%);
 }
+
+/* .history-logo {
+  position: relative;
+  width: 220px;
+  height: 220px;
+  margin: 0 auto;
+} */
+.logo-orbit {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.logo-core {
+  width: 140px;
+  height: 140px;
+  background: #fff;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.logo-core img {
+  width: 64px;
+  margin-bottom: 8px;
+}
+
+.logo-core p {
+  font-size: 12px;
+  font-weight: 600;
+  color: #111;
+  letter-spacing: 1px;
+}
+.orbit-dot {
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  background: #fff;
+  border-radius: 50%;
+}
+
+/* 위치 수동 배치 (피그마 기준) */
+.orbit-dot.d1 { top: -3px; left: 50%; transform: translateX(-50%); }
+.orbit-dot.d2 { right: -3px; top: 50%; transform: translateY(-50%); }
+.orbit-dot.d3 { bottom: -3px; left: 30%; }
+.orbit-dot.d4 { left: -3px; top: 35%; }
+/* @keyframes orbitRotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+} */
+
+.logo-orbit {
+  animation: orbitRotate 30s linear infinite;
+}
+@media (max-width: 900px) {
+  .history-logo {
+    width: 160px;
+    height: 160px;
+    margin-bottom: 80px;
+  }
+
+  .logo-core {
+    width: 110px;
+    height: 110px;
+  }
+
+  .logo-core img {
+    width: 48px;
+  }
+}
+
+
+/* ----------------------------------------------------------------------------- */
+
 .historycircle2 {
     width: 344px;
     height: 344px;
@@ -239,4 +324,94 @@
     filter: 
     brightness(0)
     saturate(0);
+}
+
+
+@media (max-width: 900px) {
+
+  .history {
+    height: auto;
+    padding: 100px 0;
+  }
+
+  .history-inner {
+    padding: 0 24px;
+    position: relative;
+  }
+
+  /* ===== 데스크톱 요소 전부 제거 ===== */
+  .timeline-line,
+  .first-line,
+  .second-line,
+  .third-line,
+  .fourth-line,
+  .timelinedot,
+  .history-logo,
+  .icon-circle,
+  .icon,
+  .big-circle,
+  .first-first,
+  .second-first,
+  .third-first,
+  .fourth-first {
+    display: none !important;
+  }
+
+  /* ===== 세로 라인 ===== */
+  .history-inner::before {
+    content: "";
+    position: absolute;
+    left: 10px;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background: rgba(255, 255, 255, 0.2);
+  }
+
+  /* ===== 타임라인 아이템 ===== */
+  .timeline-item {
+    position: relative;
+    width: 100%;
+    margin-bottom: 60px;
+    padding-left: 40px;
+    transform: none !important;
+    top: auto !important;
+    left: auto !important;
+  }
+
+  /* 작은 dot */
+  .timeline-item::before {
+    content: "";
+    position: absolute;
+    left: 3px;
+    top: 6px;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: #fff;
+  }
+
+  /* 위/아래 구분 제거 */
+  .timeline-item.top,
+  .timeline-item.bottom {
+    top: auto;
+  }
+
+  /* 텍스트 정리 */
+  .timeline-item .content {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .timeline-item h4 {
+    font-size: 22px;
+    font-weight: 600;
+  }
+
+  .timeline-item p {
+    font-size: 15px;
+    line-height: 1.6;
+    opacity: 0.85;
+  }
 }

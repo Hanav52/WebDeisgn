@@ -53,12 +53,11 @@ body{
     box-sizing: border-box;
 }
 
-/* .section03 {
-  background: #000;
-  padding: 120px 0;
-} */
-
-.grid {
+#main-section03 {
+  height: 950px;
+  
+}
+/* .grid {
   max-width: 1200px;
   height: 945px;
   margin: 0 auto;
@@ -67,7 +66,81 @@ body{
   grid-auto-rows: 260px;
   gap: 24px;
   align-content: center;
+} */
+ .grid {
+  height: 945px;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: minmax(240px, auto);
+  gap: 24px;
+  align-content: center;
 }
+/* ------------------------------ */
+
+.overlay strong {
+  font-size: clamp(16px, 1.4vw, 18px);
+}
+
+.hoverfont {
+  font-size: clamp(26px, 3vw, 36px);
+}
+
+.hoversmall {
+  font-size: clamp(20px, 2.4vw, 27px);
+}
+
+.overlay p {
+  font-size: clamp(12px, 1.2vw, 16px);
+}
+@media (max-width: 1240px) {
+  .grid {
+    max-width: 1100px;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px;
+    height: auto;
+  }
+
+  .card.tall {
+    grid-row: span 1; /* 세로 2칸 해제 */
+
+  }
+}
+@media (max-width: 600px) {
+  .section03 {
+    padding: 80px 0;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+    height: auto;
+    padding: 0 16px;
+  }
+
+  .card {
+    min-height: 260px;
+  }
+
+  .overlay.horizontal {
+    bottom: 20px;
+  }
+
+  .drink-overlay-hover {
+    top: auto;
+    transform: none;
+  }
+
+  .drink-overlay-hover button {
+    width: 100%;
+  }
+}
+
+
+
+/* ----------------------------------- */
+
 
 /* 카드 공통 */
 .card {
@@ -277,16 +350,23 @@ body{
   align-items: center;
   justify-content: space-between;
 }
+.video-bg {
+  position: relative;
+  overflow: hidden;
+}
 
-/* section03 영역 설정 */
-/* .section03 {
-  display: flex;
-} */
 .video {
   position: absolute;
+  inset: 0;
   width: 100%;
   height: 100%;
   object-fit: cover;
+  z-index: 0;
+}
+
+.section-inner {
+  position: relative;
+  z-index: 1;
 }
 
 /* .hoverbefore:hover  .hoverafter {

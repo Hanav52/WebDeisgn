@@ -1,0 +1,72 @@
+.brand-swiper {
+  height: 100vh;
+  background: radial-gradient(circle at center, #1b1b1b, #000);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+}
+
+.brand-title {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.brand-title span {
+  font-size: 14px;
+  opacity: 0.7;
+}
+
+.brand-title h2 {
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+.brandSwiper {
+  width: 100%;
+  max-width: 1200px;
+}
+
+.swiper-slide {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.brand-item {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 14px;
+  opacity: 0.5;
+}
+
+.brand-item img {
+  width: 120px;
+  height: auto;
+}
+
+.brand-name {
+  margin-top: 24px;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+/* 활성 슬라이드 강조 */
+.swiper-slide-active .brand-item {
+  opacity: 1;
+}
+
+.swiper-slide-active img {
+  transform: scale(1.1);
+  transition: transform 0.4s ease;
+}
+
+/* navigation */
+.swiper-button-prev,
+.swiper-button-next {
+  color: #fff;
+}

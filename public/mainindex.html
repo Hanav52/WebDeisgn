@@ -12,6 +12,8 @@
     <link rel="stylesheet" href="../src/CSS/(완성)section03.css">
     <link rel="stylesheet" href="../src/CSS/(완성)section02.css">
     <link rel="stylesheet" href="../src/CSS/Footer.css">
+    <!-- 스크립트 부분 -->
+    <script src="../src/JS/header.js"></script>
     <title>동화약품</title>
   </head>
   <body>
@@ -55,7 +57,7 @@
             </div>
             <div class="head-last">
                 <form class="head-search">
-                    <input type="search" placeholder="햄버거" aria-label="검색">
+                    <input type="search" placeholder="검색" aria-label="검색">
                 </form>
                 <div class="head-hamburger">
                     <a>
@@ -79,33 +81,6 @@
                 <div class="spanline"></div>
             </div>
 
-            <!-- 메뉴 콘텐츠 -->
-            <!-- <div class="sitemap-content">
-                <div class="sitemap-column">
-                    <small>HOLDINGS</small>
-                    <h3>종근당홀딩스</h3>
-                    <ul>
-                        <li>회사소개</li>
-                        <li>가족회사</li>
-                        <li>투자정보</li>
-                        <li>지속가능경영</li>
-                    </ul>
-                </div>
-
-                <div class="sitemap-column">
-                    <small>PHARMA</small>
-                    <h3>종근당</h3>
-                    <ul>
-                        <li>기업</li>
-                        <li>제품</li>
-                        <li>연구</li>
-                        <li>투자정보</li>
-                        <li>홍보</li>
-                    </ul>
-                </div>
-
-                <!-- 필요 컬럼 계속 추가 -->
-            <!-- </div> -->
             <div class="sitemap-list-wrap">
                 <div class="d-t">
                     <div class="d-c">
@@ -641,20 +616,5 @@
     },
   });
 </script>
-<script>
-        const openBtn = document.querySelector('.head-hamburger .hambur');
-        const overlay = document.getElementById('sitemapOverlay');
-        const closeBtn = document.getElementById('sitemapClose');
-
-        openBtn.addEventListener('click', () => {
-            overlay.classList.add('active');
-            document.body.style.overflow = 'hidden'; // 스크롤 잠금
-        });
-
-        closeBtn.addEventListener('click', () => {
-            overlay.classList.remove('active');
-            document.body.style.overflow = '';
-        });
-    </script>
 </body>
 </html>

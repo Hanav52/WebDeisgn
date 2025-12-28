@@ -130,3 +130,17 @@
     display: flex;
     justify-content: center;
 }
+
+@media (max-width: 768px) {
+  .brand-item {
+    font-size: 12px;
+  }
+
+  .brand-item img {
+    width: 90px;
+  }
+
+  .brand-title h2 {
+    font-size: 26px;
+  }
+}
