@@ -4,20 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" type="image/x-icon" href="../기타파일/동화약품.png">
-    <link rel="stylesheet" href="../src/CSS/main.css">
+    <link rel="stylesheet" href="../src/CSS/SubPage.css">
     <link rel="stylesheet" href="../src/CSS/Footer.css">
-    <link rel="stylesheet" href="../src/CSS/SubSection01.css">
-    <link rel="stylesheet" href="../src/CSS/(완성)SubSection02.css">
-    <link rel="stylesheet" href="../src/CSS/SubSection03.css">
-    <link rel="stylesheet" href="../src/CSS/(완성)SubSection04.css">
-    <link rel="stylesheet" href="../src/CSS/SubSection05.css">
-    <link rel="stylesheet" href="../src/CSS/(완성)SubSection06.css">
+    <link rel="stylesheet" href="../src/CSS/(찐완성)SubSection01.css">
+    <link rel="stylesheet" href="../src/CSS/(찐완성)SubSection02.css">
+    <link rel="stylesheet" href="../src/CSS/(찐완성)SubSection03.css">
+    <link rel="stylesheet" href="../src/CSS/(찐완성)SubSection04.css">
+    <link rel="stylesheet" href="../src/CSS/(찐완성)SubSection05.css">
+    <link rel="stylesheet" href="../src/CSS/(찐완성)SubSection06.css">
     <!-- 스와이퍼 CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"/>
     <!-- 스와이퍼 CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.8.4/swiper-bundle.min.css">
     <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
     <script src="../src/JS/header.js"></script>
+    <script src="../src/JS/SubSection02.js"></script>
+    <script src="../src/JS/SubSection03.js"></script>
     <script src="../src/JS/SubSection04.js"></script>
     <script src="../src/JS/SubSection05.js"></script>
     <title>동화약품</title>
@@ -63,7 +65,7 @@
             </div>
             <div class="head-last">
                 <form class="head-search">
-                    <input type="search" placeholder="햄버거" aria-label="검색">
+                    <input type="search" placeholder="검색" aria-label="검색">
                 </form>
                 <div class="head-hamburger">
                     <a>
@@ -235,7 +237,8 @@
     </section>
 
     <!-- SubSection02 -->
-    <div id="section02">
+    <div class="sub-section02">
+        <div id="section02">
         <!-- 상단박스 -->
         <div class="upbox">
             <h3>동화약품 연구개발본부는<br>
@@ -244,36 +247,21 @@
         </div>
         <!-- 하단박스 -->
         <div class="downbox">
-            <div class="downupbox">
+            <div class="downupbox fade-left">
                 <span>미래지향적<br>
                 &nbsp;&nbsp;&nbsp;혁신 신약 개발</span>
             </div>
             <div class="downcenterbox">
-                <img src="../src/기타파일/webdesignlogo/SubSection02-1.png">
-                <img src="../src/기타파일/webdesignlogo/SubSection02-2.png">
-                <img src="../src/기타파일/webdesignlogo/SubSection02-3.png">
+                <img class="img-01" src="../src/기타파일/webdesignlogo/SubSection02-1.png">
+                <img class="img-02" src="../src/기타파일/webdesignlogo/SubSection02-2.png">
+                <img class="img-03" src="../src/기타파일/webdesignlogo/SubSection02-3.png">
             </div>
-            <div class="downdownbox">
+            <div class="downdownbox fade-right">
                 <span>의료현장<br>
                 &nbsp;&nbsp;&nbsp;중심 개량 신약</span>
             </div>
-
-            <!-- <div class="fstbox">
-                <div class="downfirstbox">
-                    <span>미래지향적<br>
-                        &nbsp;&nbsp;&nbsp;혁신 신약 개발</span>
-                    <img src="../src/기타파일/webdesignlogo/SubSection02-1.png">
-                </div>
-                <div class="downsecondbox">
-                    <img src="../src/기타파일/webdesignlogo/SubSection02-2.png">
-                </div>
-                <div class="downthirdbox">
-                    <img src="../src/기타파일/webdesignlogo/SubSection02-3.png">
-                    <span>의료현장<br>
-                        &nbsp;&nbsp;&nbsp;중심 개량 신약</span>
-                </div>
-            </div> -->
         </div>
+    </div>
     </div>
 
     <!-- SubSection03 -->
@@ -300,7 +288,7 @@
         <!-- 우측 카드 -->
         <div class="research-grid">
             
-            <div class="research-card">
+            <div class="research-card" data-row="1">
                 <div class="research-card1">
                     <h3>혁신 신약 연구</h3>
                     <span class="en">Innovative New Drug Research</span>
@@ -314,7 +302,7 @@
                 </div>
             </div>
 
-            <div class="research-card">
+            <div class="research-card" data-row="1">
                 <div class="research-card1">
                     <h3>개량 신약 연구</h3>
                     <span class="en">Improved Drug Development</span>
@@ -328,7 +316,7 @@
                 </div>
             </div>
 
-            <div class="research-card">
+            <div class="research-card" data-row="2">
                 <div class="research-card1">
                     <h3>일반의약품 연구</h3>
                     <span class="en">OTC Medicine Research</span>
@@ -343,7 +331,7 @@
             
             </div>
 
-            <div class="research-card">
+            <div class="research-card" data-row="2">
                 <div class="research-card1">
                     <h3>기능성 소재 연구</h3>
                     <span class="en">Functional Ingredient Research</span>
@@ -357,7 +345,7 @@
                 </div>
             </div>
 
-            <div class="research-card">
+            <div class="research-card" data-row="3">
                 <div class="research-card1">
                     <h3>제네릭 개발 연구</h3>
                     <span class="en">Generic Medicine Research</span>
@@ -372,7 +360,7 @@
                 </div>
             </div>
 
-            <div class="research-card">
+            <div class="research-card" data-row="3">
                 <div class="research-card1">
                     <h3>분석품질안전</h3>
                     <span class="en">Analytical & Quality Science</span>
@@ -390,10 +378,11 @@
     </section>
 
     <!-- SubSection04 -->
-    <div id="section04">
+    <div class="sub-section04">
+        <div id="section04">
         <div class="upupbox">
-            <span class="first">대표 브랜드</span>
-            <span class="second">동화약품의 대표 브랜드들은 120년 전통의 품질과<br>
+            <span class="upupbox-first">대표 브랜드</span>
+            <span class="upupbox-second">동화약품의 대표 브랜드들은 120년 전통의 품질과<br>
                                  신뢰를 바탕으로 오랫동안 소비자들의 사랑을 받고 있습니다. </span>
 
         </div>
@@ -401,7 +390,7 @@
         <div class="swiper mySwiper">
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
-                    <div class="section04-head-1">
+                    <div class="section04-head">
                         1897
                     </div>
                     <div class="section04-body">
@@ -429,7 +418,7 @@
                     <div class="section04-head">
                         1980
                     </div>
-                    <div class="section-body">
+                    <div class="section04-body">
                         <img src="../src/기타파일/webdesignlogo/fushidin.png">
                     </div>
                     <div class="abcdefg">
@@ -521,10 +510,6 @@
                         <p>후시딘</p>
                     </div>
                 </div>
-                
-
-                
-
 
             </div>
             <div class="autoplay-progress">
@@ -535,183 +520,185 @@
             </div>
         </div>
     </div>
+    </div>
 
     <!-- SubSection05 -->
-    <div id="section05">
-        <div class="section05-upbox">
-            <div class="section05-upbox-left">
-                <span>
-                    주요 연구과제
-                </span>
+    <section class="sub-section05">
+        <div id="section05">
+            <div class="section05-upbox">
+                <div class="section05-upbox-left">
+                    <span>
+                        주요 연구과제
+                    </span>
+                </div>
+                <div class="sectino05-upbox-right">
+                    <button class="tab active" data-target="pipe1">혁신신약 파이프라인</button>
+                    <button class="tab" data-target="pipe2">개량신약 파이프라인</button>
+                    <button class="tab" data-target="pipe3">기능성 소재 파이프라인</button>
+                </div>
             </div>
-            <div class="sectino05-upbox-right">
-                <button class="tab active" data-target="pipe1">혁신신약 파이프라인</button>
-                <button class="tab" data-target="pipe2">개량신약 파이프라인</button>
-                <button class="tab" data-target="pipe3">기능성 소재 파이프라인</button>
+            <div class="section05-downbox pipeline-contents">
+                <!-- 혁신신약 파이프라인 -->
+                <table class="pipeline-table active" id="pipe1">
+                    <thead>
+                        <tr>
+                            <th>Project</th>
+                            <th>Indication</th>
+                            <th colspan="5" class="stages">
+                                <span>Hit</span>
+                                <span>Lead</span>
+                                <span>Candidate</span>
+                                <span>Preclinical</span>
+                                <span>Clinical</span>
+                            </th>
+                        </tr>
+                    </thead>
+    
+                    <tbody>
+                        <tr>
+                            <td>DW2008</td>
+                            <td>천식</td>
+                            <td colspan="5" class="stage-cell">
+                                <div class="bar full"></div>
+                                <div class="barbar"></div>
+                            </td>
+                        </tr>
+    
+                        <tr>
+                            <td>DW1023</td>
+                            <td>항암제</td>
+                            <td colspan="5" class="stage-cell">
+                                <div class="barbar"></div>
+                                <div class="bar clinical"></div>
+                            </td>
+                        </tr>
+    
+                        <tr>
+                            <td>DW1024</td>
+                            <td>면역질환</td>
+                            <td colspan="5" class="stage-cell">
+                                <div class="barbar"></div>
+                                <div class="bar candidate"></div>
+                            </td>
+                        </tr>
+    
+                        <tr>
+                            <td>DW1025</td>
+                            <td>천식</td>
+                            <td colspan="5" class="stage-cell">
+                                <div class="barbar"></div>
+                                <div class="bar lead"></div>
+                            </td>
+                        </tr>
+    
+                        <tr>
+                            <td>DW1030</td>
+                            <td>근감소증</td>
+                            <td colspan="5" class="stage-cell">
+                                <div class="barbar"></div>
+                                <div class="bar lead"></div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <!-- 개량신약 파이프라인 -->
+                <table class="pipeline-table" id="pipe2">
+                    <thead>
+                        <tr>
+                            <th>Project</th>
+                            <th>Indication</th>
+                            <th colspan="5" class="stages">
+                                <span>Hit</span>
+                                <span>Lead</span>
+                                <span>Candidate</span>
+                                <span>Preclinical</span>
+                                <span>Clinical</span>
+                            </th>
+                        </tr>
+                    </thead>
+    
+                    <tbody>
+                        <tr>
+                            <td>DW6012</td>
+                            <td>당뇨</td>
+                            <td colspan="5" class="stage-cell">
+                                <div class="barbar"></div>
+                                <div class="bar full"></div>
+                            </td>
+                        </tr>
+    
+                        <tr>
+                            <td>DW6013</td>
+                            <td>당뇨</td>
+                            <td colspan="5" class="stage-cell">
+                                <div class="barbar"></div>
+                                <div class="bar clinical"></div>
+                            </td>
+                        </tr>
+    
+                        <tr>
+                            <td>DW6014</td>
+                            <td>당뇨</td>
+                            <td colspan="5" class="stage-cell">
+                                <div class="barbar"></div>
+                                <div class="bar candidate"></div>
+                            </td>
+                        </tr>
+    
+                        <tr>
+                            <td>DW6015</td>
+                            <td>당뇨</td>
+                            <td colspan="5" class="stage-cell">
+                                <div class="barbar"></div>
+                                <div class="bar lead"></div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <!-- 기능성 소재 파이프라인 -->
+                <table class="pipeline-table" id="pipe3">
+                    <thead>
+                        <tr>
+                            <th>Project</th>
+                            <th>Indication</th>
+                            <th colspan="5" class="stages">
+                                <span>Hit</span>
+                                <span>Lead</span>
+                                <span>Candidate</span>
+                                <span>Preclinical</span>
+                                <span>Clinical</span>
+                            </th>
+                        </tr>
+                    </thead>
+    
+                    <tbody>
+                        <tr>
+                            <td>DW2009</td>
+                            <td>인지기능</td>
+                            <td colspan="5" class="stage-cell">
+                                <div class="barbar"></div>
+                                <div class="bar full"></div>
+                            </td>
+                        </tr>
+    
+                        <tr>
+                            <td>DW2012</td>
+                            <td>근력개선</td>
+                            <td colspan="5" class="stage-cell">
+                                <div class="barbar"></div>
+                                <div class="bar clinical"></div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+    
             </div>
         </div>
-        <div class="section05-downbox pipeline-contents">
-            <!-- 혁신신약 파이프라인 -->
-            <table class="pipeline-table active" id="pipe1">
-                <thead>
-                    <tr>
-                        <th>Project</th>
-                        <th>Indication</th>
-                        <th colspan="5" class="stages">
-                            <span>Hit</span>
-                            <span>Lead</span>
-                            <span>Candidate</span>
-                            <span>Preclinical</span>
-                            <span>Clinical</span>
-                        </th>
-                    </tr>
-                </thead>
-        
-                <tbody>
-                    <tr>
-                        <td>DW2008</td>
-                        <td>천식</td>
-                        <td colspan="5" class="stage-cell">
-                            <div class="bar full"></div>
-                            <div class="barbar"></div>
-                        </td>
-                    </tr>
-        
-                    <tr>
-                        <td>DW1023</td>
-                        <td>항암제</td>
-                        <td colspan="5" class="stage-cell">
-                            <div class="barbar"></div>
-                            <div class="bar clinical"></div>
-                        </td>
-                    </tr>
-        
-                    <tr>
-                        <td>DW1024</td>
-                        <td>면역질환</td>
-                        <td colspan="5" class="stage-cell">
-                            <div class="barbar"></div>
-                            <div class="bar candidate"></div>
-                        </td>
-                    </tr>
-        
-                    <tr>
-                        <td>DW1025</td>
-                        <td>천식</td>
-                        <td colspan="5" class="stage-cell">
-                            <div class="barbar"></div>
-                            <div class="bar lead"></div>
-                        </td>
-                    </tr>
-        
-                    <tr>
-                        <td>DW1030</td>
-                        <td>근감소증</td>
-                        <td colspan="5" class="stage-cell">
-                            <div class="barbar"></div>
-                            <div class="bar lead"></div>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
-            <!-- 개량신약 파이프라인 -->
-            <table class="pipeline-table" id="pipe2">
-                <thead>
-                    <tr>
-                        <th>Project</th>
-                        <th>Indication</th>
-                        <th colspan="5" class="stages">
-                            <span>Hit</span>
-                            <span>Lead</span>
-                            <span>Candidate</span>
-                            <span>Preclinical</span>
-                            <span>Clinical</span>
-                        </th>
-                    </tr>
-                </thead>
-        
-                <tbody>
-                    <tr>
-                        <td>DW6012</td>
-                        <td>당뇨</td>
-                        <td colspan="5" class="stage-cell">
-                            <div class="barbar"></div>
-                            <div class="bar full"></div>
-                        </td>
-                    </tr>
-        
-                    <tr>
-                        <td>DW6013</td>
-                        <td>당뇨</td>
-                        <td colspan="5" class="stage-cell">
-                            <div class="barbar"></div>
-                            <div class="bar clinical"></div>
-                        </td>
-                    </tr>
-        
-                    <tr>
-                        <td>DW6014</td>
-                        <td>당뇨</td>
-                        <td colspan="5" class="stage-cell">
-                            <div class="barbar"></div>
-                            <div class="bar candidate"></div>
-                        </td>
-                    </tr>
-        
-                    <tr>
-                        <td>DW6015</td>
-                        <td>당뇨</td>
-                        <td colspan="5" class="stage-cell">
-                            <div class="barbar"></div>
-                            <div class="bar lead"></div>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
-            <!-- 기능성 소재 파이프라인 -->
-            <table class="pipeline-table" id="pipe3">
-                <thead>
-                    <tr>
-                        <th>Project</th>
-                        <th>Indication</th>
-                        <th colspan="5" class="stages">
-                            <span>Hit</span>
-                            <span>Lead</span>
-                            <span>Candidate</span>
-                            <span>Preclinical</span>
-                            <span>Clinical</span>
-                        </th>
-                    </tr>
-                </thead>
-        
-                <tbody>
-                    <tr>
-                        <td>DW2009</td>
-                        <td>인지기능</td>
-                        <td colspan="5" class="stage-cell">
-                            <div class="barbar"></div>
-                            <div class="bar full"></div>
-                        </td>
-                    </tr>
-        
-                    <tr>
-                        <td>DW2012</td>
-                        <td>근력개선</td>
-                        <td colspan="5" class="stage-cell">
-                            <div class="barbar"></div>
-                            <div class="bar clinical"></div>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
-            
-        </div>
-    </div>
+    </section>
 
     <!-- SubSection06 -->
     <div id="section06">
         <div class="ubox">
-            공간
         </div>
         <div class="dnbox">
             <h3>기술 혁신 네트워크</h3>

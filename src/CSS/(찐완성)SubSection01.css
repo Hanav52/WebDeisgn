@@ -1,0 +1,94 @@
+/* 전체 섹션 */
+.rnd-section {
+  background: #242424;
+  color: #fff;
+  padding: 140px 0 180px;
+}
+
+/* 가운데 정렬 */
+.rnd-inner {
+  max-width: 1220px;        /* 1920 - 350*2 */
+  margin: 0 auto;
+}
+
+/* 텍스트 */
+.rnd-text {
+  margin-bottom: 64px;
+}
+
+.rnd-text h2 {
+  font-size: 56px;
+  font-weight: 700;
+  margin-bottom: 28px;
+}
+
+.rnd-text p {
+  font-size: 24px;
+  max-width: 1200px;
+  line-height: 1.6;
+  font-weight: 300;
+}
+
+/* 이미지 박스 (시안 핵심) */
+.rnd-image-box {
+  width: calc(100vw - 350px);  /* 오른쪽은 끝까지 */
+  height: 320px;
+  overflow: hidden;
+}
+
+/* 실제 이미지 */
+.rnd-image {
+  width: 100%;
+  height: auto;
+  transform: translateY(-120px);   /* 시작 위치 */
+  will-change: transform;
+}
+
+@media (max-width: 1199px) {
+
+  .rnd-section {
+    padding: 120px 0 160px;
+  }
+
+  .rnd-inner {
+    padding: 0 60px;
+  }
+
+  .rnd-image-box {
+    margin-left: 60px;
+    width: calc(100vw - 60px);
+    height: 280px;
+  }
+
+  .rnd-image {
+    transform: translateY(-80px);
+  }
+}
+@media (max-width: 767px) {
+
+  .rnd-section {
+    padding: 100px 0 120px;
+  }
+
+  .rnd-inner {
+    padding: 0 24px;
+  }
+
+  .rnd-image-box {
+    margin-left: 0;
+    width: 100%;
+    height: 220px;
+  }
+
+  .rnd-image {
+    transform: translateY(-40px);
+  }
+
+  .rnd-text h2 {
+    font-size: 28px;
+  }
+
+  .rnd-text p {
+    font-size: 16px;
+  }
+}

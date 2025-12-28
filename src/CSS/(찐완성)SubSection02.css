@@ -1,0 +1,140 @@
+#section02 {
+    max-width: 1220px;
+    margin: 0 auto;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #161616;
+}
+
+.sub-section02 {
+  background-color: #161616;
+
+}
+
+.upbox{
+    margin: 148px 0 114px 0;
+}
+
+.upbox h3 {
+    color: #fff;
+    font-size: 48px;
+}
+
+.downbox {
+    color: #fff;
+    font-size: 38px;
+    transform: translateY(-8%);
+}
+
+.downupbox {
+    display: flex;
+    transform: translateY(50%);
+    justify-content: flex-start;
+}
+.downdownbox {
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: flex-end;
+}
+
+.downcenterbox {
+    display: flex;
+    justify-content: space-between;
+    /* display: grid;               
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    align-items: center; */
+}
+
+.downcenterbox img {
+    object-fit: contain;
+}
+.img-01 { align-self: end; }
+.img-02 { align-self: center; }
+.img-03 { align-self: start; }
+
+/* ===== scroll fade animation ===== */
+.fade-left,
+.fade-right {
+  opacity: 0;
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+/* 왼쪽 텍스트 */
+.fade-left {
+  transform: translateX(-60px);
+}
+
+/* 오른쪽 텍스트 */
+.fade-right {
+  transform: translateX(60px);
+}
+
+/* 나타난 상태 */
+.fade-left.is-visible {
+    opacity: 1;
+    transform: translateY(50%);
+}
+.fade-right.is-visible {
+    opacity: 1;
+    transform: translateY(-50%);
+}
+
+@media (max-width: 767px) {
+  .fade-left,
+  .fade-right {
+    transform: translateY(40px);
+  }
+}
+
+@media (max-width: 1199px) {
+
+  #section02 {
+    padding: 120px 0;
+  }
+
+  .section02-inner {
+    padding: 0 60px;
+  }
+
+  .downupbox,
+  .downdownbox {
+    text-align: left;
+  }
+
+  .downcenterbox {
+    flex-direction: column;
+    gap: 24px;
+  }
+
+}
+@media (max-width: 767px) {
+
+  #section02 {
+    padding: 100px 0;
+  }
+
+  .section02-inner {
+    padding: 0 24px;
+  }
+
+  .upbox h3 {
+    font-size: 28px;
+    margin-bottom: 60px;
+  }
+
+  .downcenterbox {
+    gap: 24px;
+  }
+
+  .fade-left,
+  .fade-right {
+    transform: translateY(40px);  /* 모바일은 위→아래 */
+  }
+
+  .is-visible {
+    transform: translateY(0);
+  }
+}

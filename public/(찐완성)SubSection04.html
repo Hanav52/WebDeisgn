@@ -6,14 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"/>
     <!-- Link Swiper's CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"/>
-    <link rel="stylesheet" href="../src/CSS/(완성)SubSection04.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="../src/CSS/(찐완성)SubSection04.css"/>
+    <script src="../src/JS/SubSection04.js"></script>
 </head>
 
 <body>
-    <div id="section04">
+    <div class="sub-section04">
+        <div id="section04">
         <div class="upupbox">
-            <span class="first">대표 브랜드</span>
-            <span class="second">동화약품의 대표 브랜드들은 120년 전통의 품질과<br>
+            <span class="upupbox-first">대표 브랜드</span>
+            <span class="upupbox-second">동화약품의 대표 브랜드들은 120년 전통의 품질과<br>
                                  신뢰를 바탕으로 오랫동안 소비자들의 사랑을 받고 있습니다. </span>
 
         </div>
@@ -21,7 +24,7 @@
         <div class="swiper mySwiper">
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
-                    <div class="section04-head-1">
+                    <div class="section04-head">
                         1897
                     </div>
                     <div class="section04-body">
@@ -49,7 +52,7 @@
                     <div class="section04-head">
                         1980
                     </div>
-                    <div class="section-body">
+                    <div class="section04-body">
                         <img src="../src/기타파일/webdesignlogo/fushidin.png">
                     </div>
                     <div class="abcdefg">
@@ -151,38 +154,7 @@
             </div>
         </div>
     </div>
+    </div>
     
-
-    <!-- Swiper JS -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
-
-    <!-- Initialize Swiper -->
-    <script>
-        const progressCircle = document.querySelector(".autoplay-progress svg");
-        const progressContent = document.querySelector(".autoplay-progress span");
-        var swiper = new Swiper(".mySwiper", {
-            slidesPerView: 5,
-            loop: true,
-            centeredSlides: true,
-            autoplay: {
-            delay: 1500,
-            disableOnInteraction: false,
-            },
-            // spaceBetween: 30,
-            freeMode: true,
-            
-            // pagination: {
-            //     el: ".swiper-pagination",
-            //     clickable: true,
-            // },
-            on: {
-            autoplayTimeLeft(s, time, progress) {
-                progressCircle.style.setProperty("--progress", 1 - progress);
-                progressContent.textContent = `${Math.ceil(time / 1000)}s`;
-            },
-            },
-        });
-    </script>
 </body>
-
 </html>

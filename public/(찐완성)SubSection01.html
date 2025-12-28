@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../src/CSS/SubSection01.css">
+    <link rel="stylesheet" href="../src/CSS/SubSection01 copy.css">
     <title>Document</title>
 </head>
 
@@ -27,29 +27,5 @@
             </div>
         </div>
     </section>
-
-
-    <script>
-        const image = document.querySelector('.rnd-image');
-        const box = document.querySelector('.rnd-image-box');
-
-        window.addEventListener('scroll', () => {
-            const boxRect = box.getBoundingClientRect();
-            const windowHeight = window.innerHeight;
-
-            // 박스가 화면 안에 있을 때만
-            if (boxRect.top < windowHeight && boxRect.bottom > 0) {
-                const progress =
-                    (windowHeight - boxRect.top) /
-                    (windowHeight + boxRect.height);
-
-                const move = Math.min(Math.max(progress * 160, 0), 160);
-                image.style.transform = `translateY(${move}px)`;
-            }
-        });
-    </script>
-
-
 </body>
-
 </html>

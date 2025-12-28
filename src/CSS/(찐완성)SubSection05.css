@@ -1,15 +1,22 @@
 #section05 {
+    margin: 0 auto;
     display: flex;
+    position: relative;
+
+    max-width: 1220px;
     flex-direction: column;
     height: 979px;
     gap: 81px;
+}
+.sub-section05 {
     background-color: #242424;
+
 }
 
 .section05-upbox {
     display: flex;
     justify-content: space-between;
-    margin: 149px 350px 0 350px;
+    margin-top: 149px;
     color: #fff;
 }
 
@@ -62,7 +69,6 @@
 }
 
 .section05-downbox {
-    margin: 0 350px;
     color: #fff;
 }
 
@@ -210,4 +216,53 @@
 
 .pipeline-table.active {
   display: table;
+}
+
+
+@media (max-width: 1024px) {
+
+  .section05-upbox {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 32px;
+    margin: 120px 120px 0 120px;
+  }
+
+  .sectino05-upbox-right {
+    width: 100%;
+    flex-direction: column;   /* ✅ 가로 → 세로 */
+    gap: 16px;
+  }
+
+  .sectino05-upbox-right .tab {
+    width: 100%;
+  }
+}
+
+@media (max-width: 900px) {
+
+  .section05-downbox.pipeline-contents {
+    display: none;
+  }
+
+}
+@media (max-width: 768px) {
+
+  #section05 {
+    height: auto;
+    gap: 48px;
+  }
+
+  .section05-upbox {
+    margin: 100px 24px 0 24px;
+  }
+
+  .section05-upbox-left span {
+    font-size: 20px;
+  }
+
+  .sectino05-upbox-right .tab {
+    font-size: 14px;
+    padding: 12px 16px;
+  }
 }

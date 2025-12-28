@@ -1,62 +1,3 @@
-/* CSS 기본 셋팅 */
-@font-face {
-    font-family: 'AstaSans';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2505-1@1.0/AstaSans-Light.woff2') format('woff2');
-    font-weight: 300;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'AstaSans';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2505-1@1.0/AstaSans-Regular.woff2') format('woff2');
-    font-weight: 400;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'AstaSans';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2505-1@1.0/AstaSans-Medium.woff2') format('woff2');
-    font-weight: 500;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'AstaSans';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2505-1@1.0/AstaSans-SemiBold.woff2') format('woff2');
-    font-weight: 600;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'AstaSans';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2505-1@1.0/AstaSans-Bold.woff2') format('woff2');
-    font-weight: 700;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'AstaSans';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2505-1@1.0/AstaSans-ExtraBold.woff2') format('woff2');
-    font-weight: 800;
-    font-display: swap;
-}
-
-*,
-*::before,
-*::after {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body{
-  font-family: 'AstaSans';
-}
-a {
-  all: unset;
-  cursor: pointer;
-}
-
 .research-section {
     background: #242424;
     color: #fff;
@@ -159,6 +100,19 @@ a {
     font-size: 32px;
 }
 
+/* 기본 숨김 상태 */
+.research-card {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+/* 등장 상태 */
+.research-card.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 /* 🔥 hover 효과 */
 .research-card:hover,
 .research-card.active {
@@ -194,6 +148,82 @@ a {
 .research-card1:hover > .icon6 {
     content: url("../기타파일/search-white.png");
 }
-.research-card1:hover {
 
+/* @media (max-width: 1300px) {
+  .research-inner {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media (max-width: 850px) {
+  .research-grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+} */
+
+@media (max-width: 1440px) {
+
+  .research-inner {
+    max-width: 1100px;   /* 기존 1400 → 축소 */
+    gap: 32px;
+  }
+
+  .research-info {
+    width: 360px;
+  }
+
+  .research-grid {
+    grid-template-columns: repeat(2, 1fr);  /* 고정 px 제거 */
+  }
+}
+@media (max-width: 1024px) {
+
+  .research-inner {
+    flex-direction: column;   /* ⬅️ 위/아래 분리 */
+    align-items: flex-start;
+    max-width: 100%;
+    padding: 0 60px;
+  }
+
+  .research-info {
+    width: 100%;
+    margin-bottom: 48px;
+  }
+
+  .research-grid {
+    width: 100%;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 768px) {
+
+  .research-section {
+    padding: 100px 0;
+  }
+
+  .research-inner {
+    padding: 0 24px;
+  }
+
+  .research-info h2 {
+    font-size: 32px;
+  }
+
+  .research-info p,
+  .research-info .desc {
+    font-size: 18px;
+  }
+
+  .research-grid {
+    grid-template-columns: 1fr;   /* ✅ 1줄 */
+    grid-auto-rows: auto;
+  }
+
+  .research-card {
+    padding: 12px;
+  }
+
+  .research-card1 h3 {
+    font-size: 24px;
+  }
 }
