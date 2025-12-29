@@ -1,0 +1,154 @@
+/* ===== Base ===== */
+.brand-area {
+  background: #111;
+  color: #fff;
+  padding: 140px 0 160px;
+  text-align: center;
+  overflow: hidden;
+}
+
+.brand-head span {
+  font-size: 14px;
+  opacity: 0.8;
+}
+
+.brand-head h2 {
+  font-size: 42px;
+  margin: 16px 0 20px;
+  line-height: 1.3;
+}
+
+.brand-more {
+  font-size: 14px;
+  color: #fff;
+  opacity: 0.8;
+}
+
+/* ===== Swiper ===== */
+.brand-item {
+  min-height: 420px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding-top: 40px;
+}
+
+/* ===== Product Image (핵심 연출) ===== */
+.product-img {
+  width: clamp(120px, 14vw, 180px);
+  max-height: 260px;
+  height: auto;
+
+  transform: scale(0.6);
+  opacity: 0;
+
+  transition:
+    transform 0.4s ease,
+    opacity 0.4s ease;
+
+  will-change: transform, opacity;
+}
+
+/* 중앙 도착 후에만 등장 (ease-out) */
+.brand-swiper.is-arrived .swiper-slide-active .product-img {
+  transform: scale(1);
+  opacity: 1;
+
+  transition:
+    transform 0.6s ease-out,
+    opacity 0.6s ease-out;
+}
+
+/* ===== Brand Title (0.1초 딜레이) ===== */
+.brand-title {
+  margin-top: auto;
+  padding-bottom: 20px;
+  font-size: 22px;
+  font-weight: 600;
+
+  opacity: 0;
+  transform: translateY(-10px);
+
+  transition:
+    opacity 0.4s ease,
+    transform 0.4s ease;
+}
+
+.brand-swiper.is-arrived .swiper-slide-active .brand-title {
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: 0.1s;
+}
+
+/* ===== Bottom Controls ===== */
+.brand-controls {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.brand-prev,
+.brand-next {
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 22px;
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+.brand-prev:hover,
+.brand-next:hover {
+  opacity: 1;
+}
+
+/* ===== Pagination ===== */
+.brand-pagination {
+  font-size: 14px;
+  letter-spacing: 0.1em;
+  display: flex;
+  align-items: center;
+  color: rgba(255,255,255,0.7);
+}
+
+.brand-pagination .current {
+  color: #fff;
+  font-weight: 600;
+  transition: opacity 0.25s ease, transform 0.25s ease;
+}
+
+.brand-pagination.is-changing .current {
+  opacity: 0;
+  transform: translateY(6px);
+}
+
+.brand-pagination .slash {
+  margin: 0 6px;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 768px) {
+  .brand-head h2 {
+    font-size: 28px;
+  }
+
+  .brand-item {
+    min-height: 360px;
+  }
+
+  .brand-pagination {
+    display: none; /* 모바일: 숫자 숨김 */
+  }
+
+  .brand-controls {
+    gap: 40px;
+  }
+
+  .brand-prev,
+  .brand-next {
+    font-size: 26px;
+  }
+}

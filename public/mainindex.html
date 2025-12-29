@@ -3,17 +3,22 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" type="image/x-icon" href="../기타파일/동화약품.png">
+    <link rel="shortcut icon" type="image/x-icon" href="../src/기타파일/동화약품.png">
     <!-- 스와이퍼 CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"/>
-    <!-- 스와이퍼 CSS -->
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.8.4/swiper-bundle.min.css"> -->
+    <link rel="stylesheet" href="../src/CSS/SubPage.css">
     <link rel="stylesheet" href="../src/CSS/main.css">
-    <link rel="stylesheet" href="../src/CSS/(완성)section03.css">
+    <link rel="stylesheet" href="../src/CSS/MainSection04 copy.css">
+    <link rel="stylesheet" href="../src/CSS/(찐완성)section01.css">
+    <link rel="stylesheet" href="../src/CSS/(찐완성)section03.css">
     <link rel="stylesheet" href="../src/CSS/(완성)section02.css">
     <link rel="stylesheet" href="../src/CSS/Footer.css">
     <!-- 스크립트 부분 -->
     <script src="../src/JS/header.js"></script>
+    <script src="../src/JS/MainSection01.js"></script>
+    <script src="../src/JS/MainSection02.js"></script>
+    <script src="../src/JS/MainSection03.js"></script>
+    <script src="../src/JS/MainSection04.js"></script>
     <title>동화약품</title>
   </head>
   <body>
@@ -27,29 +32,29 @@
                 <div class="head-gnb">
                     <ul>
                         <li>
-                            <a href="#">회사소개</a>
+                            <a href="https://www.dong-wha.co.kr/company/ceo.asp">회사소개</a>
                         </li>
                         <li>
-                            <a href="#">브랜드</a>
+                            <a href="https://www.dong-wha.co.kr/product/list_new.asp">브랜드</a>
                     
                         </li>
                         <li>
-                            <a href="#">R&D</a>
+                            <a href="https://www.dong-wha.co.kr/rnd/introduction.asp">R&D</a>
                     
                         </li>
                         <li>
-                            <a href="#">정도경영</a>
+                            <a href="https://www.dong-wha.co.kr/esg/philosophy/introduction.asp">정도경영</a>
                         </li>
                         <li>
-                            <a href="#">뉴스룸</a>
+                            <a href="https://www.dong-wha.co.kr/mediaCenter/dnews/list.asp">뉴스룸</a>
                     
                         </li>
                         <li>
-                            <a href="#">인재채용</a>
+                            <a href="https://www.dong-wha.co.kr/recruit/board/list.asp">인재채용</a>
                     
                         </li>
                         <li>
-                            <a href="#">고객지원</a>
+                            <a href="https://www.dong-wha.co.kr/customer/customerIdea.asp">고객지원</a>
                     
                         </li>
                     </ul>
@@ -331,7 +336,8 @@
     </section>
     
     <!-- section03 영역 -->
-    <section class="section03">
+     <div id="main-section03">
+        <section class="section03 video-bg">
         <video class="video" autoplay muted loop>
             <source src="../src/Section/section033.mp4" type="video/mp4"/>
         </video>
@@ -341,8 +347,8 @@
             <!-- BEAUTY -->
             <a class="card drink tall" href="#">
                 <div class="image-wrap">
-                    <img src="../src/기타파일/웹디자인 로고/더마코스메틱.png" alt="" class="img-default">
-                    <img src="../src/기타파일/웹디자인 로고/더마코스메틱.png" alt="더마코스메틱" class="img-hover">
+                    <img src="../src/기타파일/webdesignlogo/더마코스메틱.png" alt="" class="img-default">
+                    <img src="../src/기타파일/webdesignlogo/더마코스메틱.png" alt="더마코스메틱" class="img-hover">
                 </div>
                 
                 <div class="overlay horizontal">
@@ -368,8 +374,8 @@
             <!-- EMALL -->
             <a class="card drink" href="#">
                 <div class="image-wrap">
-                    <img src="../src/기타파일/웹디자인 로고/emall.png" alt="emall" class="img2 img2-default">
-                    <img src="../src/기타파일/웹디자인 로고/emall.png" alt="emall" class="img2 img2-hover">
+                    <img src="../src/기타파일/webdesignlogo/emall.png" alt="emall" class="img2 img2-default">
+                    <img src="../src/기타파일/webdesignlogo/emall.png" alt="emall" class="img2 img2-hover">
                 </div>
                 <div class="overlay horizontal">
                     <span class="category">EMALL</span>
@@ -394,8 +400,8 @@
             <!-- DRINK -->
             <a class="card drink tall" href="#">
                 <div class="image-wrap">
-                    <img src="../src/기타파일/웹디자인 로고/활명수쓴.png" alt="" class="img-default">
-                    <img src="../src/기타파일/웹디자인 로고/활명수쓴.png" alt="활명수" class="img-hover">
+                    <img src="../src/기타파일/webdesignlogo/활명수쓴.png" alt="" class="img-default">
+                    <img src="../src/기타파일/webdesignlogo/활명수쓴.png" alt="활명수" class="img-hover">
                 </div>
                 
                 <div class="overlay horizontal">
@@ -421,8 +427,8 @@
             <!-- MEDICINE - 알보칠 -->
             <a class="card drink tall" href="#">
                 <div class="image-wrap">
-                    <img src="../src/기타파일/웹디자인 로고/알보칠.png" alt="" class="img-default">
-                    <img src="../src/기타파일/웹디자인 로고/알보칠.png" alt="활명수" class="img-hover">
+                    <img src="../src/기타파일/webdesignlogo/알보칠.png" alt="" class="img-default">
+                    <img src="../src/기타파일/webdesignlogo/알보칠.png" alt="활명수" class="img-hover">
                 </div>
                 
                 <div class="overlay horizontal">
@@ -448,8 +454,8 @@
             <!-- MEDICINE - 후시딘 -->
             <a class="card drink" href="#">
                 <div class="image-wrap">
-                    <img src="../src/기타파일/웹디자인 로고/후시딘.png" alt="MEDICINE" class="img2 img2-default">
-                    <img src="../src/기타파일/웹디자인 로고/후시딘.png" alt="MEDICINE" class="img2 img2-hover">
+                    <img src="../src/기타파일/webdesignlogo/후시딘.png" alt="MEDICINE" class="img2 img2-default">
+                    <img src="../src/기타파일/webdesignlogo/후시딘.png" alt="MEDICINE" class="img2 img2-hover">
                 </div>
                 <div class="overlay horizontal">
                     <span class="category">MEDICINE</span>
@@ -474,8 +480,8 @@
             <!-- TOOTH -->
             <a class="card drink" href="#">
                 <div class="image-wrap">
-                    <img src="../src/기타파일/웹디자인 로고/잇치.png" alt="MEDICINE" class="img2 img2-default">
-                    <img src="../src/기타파일/웹디자인 로고/잇치.png" alt="MEDICINE" class="img2 img2-hover">
+                    <img src="../src/기타파일/webdesignlogo/잇치.png" alt="MEDICINE" class="img2 img2-default">
+                    <img src="../src/기타파일/webdesignlogo/잇치.png" alt="MEDICINE" class="img2 img2-hover">
                 </div>
                 <div class="overlay horizontal">
                     <span class="category">TOOTH</span>
@@ -499,61 +505,113 @@
 
         </div>
     </section>
+    </div>
     
     <!-- section04 영역 -->
-    <section class="section04">
-      <!-- 메인타이틀 -->
-      <div class="section04-title">
-        <p>브랜드 소개</p>
-        <p>소비자의 건강한<br/>일상에 함께합니다</p>
-        <div class="closeclose">
-          <div class="close">
-            자세히 보기
-            <div class="brand-line"></div>
-          </div>
+    <section class="brand-area be">
+        <div class="brand-head">
+            <span class="brandsog">브랜드 소개</span>
+            <h2>소비자의 건강한<br>일상에 함께합니다</h2>
+            <a href="#" class="brand-more">자세히 보기</a>
         </div>
-      </div>
-      <!-- 슬라이드 -->
-      <div class="slider-box">
-        <div class="swiper-button-prev"><i class="fas fa-angle-left"></i></div>
-        <div class="swiper-button-next"></div>
-        <div class="swiper-container section04-brand-area">
-          <div class="swiper-wrapper">
-            <!-- 1번슬라이드 -->
-            <div class="swiper-slide">
-              <img src="../src/기타파일/section01.jpg" alt="section01">
-              <div class="slide-inner section01-text">
-                <div class="section01-text-01">No.1</div>
-                <div class="section01-text-03">Trusted</div>
-                <div class="section01-text-04">HealthHeritage</div>
-                <div class="section01-text-02">당신의 일상을 지켜온 120년 전통의 건강 파트너<br />세대를 넘어 이어진 신뢰로 더 나은 내일을 만듭니다.</div>
-              </div>
-              <div class="section01-scroll">
-                <div class="scroll-01">↓</div>
-                <div>SCROLL</div>
-              </div>
+
+        <div class="swiper brand-swiper">
+            <div class="swiper-wrapper">
+
+                <div class="swiper-slide">
+                    <div class="brand-item">
+                        <img class="product-img" src="../src/기타파일/webdesignlogo/hwal.png" alt="hwal-logo">
+                        <p class="brand-title"><img class="brand-title-logo" src="../src/기타파일/hwal-logo.png"></p>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="brand-item">
+                        <img class="product-img" src="../src/기타파일/webdesignlogo/palcol.png" alt="FUSIDYNE">
+                        <p class="brand-title"><img class="brand-title-logo" src="../src/기타파일/fusidyne-logo.png"></p>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="brand-item">
+                        <img class="product-img" src="../src/기타파일/webdesignlogo/fushidin.png" alt="">
+                        <p class="brand-title"><img class="brand-title-logo" src="../src/기타파일/white-logo.png"></p>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="brand-item">
+                        <img class="product-img" src="../src/기타파일/webdesignlogo/fushidin.png" alt="">
+                        <p class="brand-title"><img class="brand-title-logo" src="../src/기타파일/white-logo.png"></p>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="brand-item">
+                        <img class="product-img" src="../src/기타파일/webdesignlogo/fushidin.png" alt="">
+                        <p class="brand-title"><img class="brand-title-logo" src="../src/기타파일/white-logo.png"></p>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="brand-item">
+                        <img class="product-img" src="../src/기타파일/webdesignlogo/fushidin.png" alt="">
+                        <p class="brand-title"><img class="brand-title-logo" src="../src/기타파일/white-logo.png"></p>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="brand-item">
+                        <img class="product-img" src="../src/기타파일/webdesignlogo/fushidin.png" alt="">
+                        <p class="brand-title"><img class="brand-title-logo" src="../src/기타파일/white-logo.png"></p>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="brand-item">
+                        <img class="product-img" src="../src/기타파일/webdesignlogo/fushidin.png" alt="">
+                        <p class="brand-title"><img class="brand-title-logo" src="../src/기타파일/white-logo.png"></p>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="brand-item">
+                        <img class="product-img" src="../src/기타파일/webdesignlogo/fushidin.png" alt="">
+                        <p class="brand-title"><img class="brand-title-logo" src="../src/기타파일/white-logo.png"></p>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="brand-item">
+                        <img class="product-img" src="../src/기타파일/webdesignlogo/fushidin.png" alt="">
+                        <p class="brand-title"><img class="brand-title-logo" src="../src/기타파일/white-logo.png"></p>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="brand-item">
+                        <img class="product-img" src="../src/기타파일/webdesignlogo/fushidin.png" alt="">
+                        <p class="brand-title"><img class="brand-title-logo" src="../src/기타파일/white-logo.png"></p>
+                    </div>
+                </div>
+                
+
             </div>
-            <!-- 2번슬라이드 -->
-            <div class="swiper-slide">
-              <img src="../src/기타파일/section01.jpg" alt="">
-              <div class="slide-inner">
-                <h2 class="slide-title">Hi, React: 애플 스토어 클론</h2>
-                <p class="slide-sub">React로 개발하는 이커머스 프론트엔드</p>
-                <button class="slide-btn">자세히 보기</button>
-              </div>
+            <div class="brand-controls">
+                <button class="brand-prev" aria-label="prev">‹</button>
+
+                <span class="brand-pagination">
+                    <strong class="current">01</strong>
+                    <span class="slash">/</span>
+                    <span class="total">11</span>
+                </span>
+
+                <button class="brand-next" aria-label="next">›</button>
             </div>
-            <!-- 3번슬라이드 -->
-            <div class="swiper-slide">
-              <img src="../src/기타파일/section01.jpg" alt="">
-              <div class="slide-inner">
-                <h2 class="slide-title">쉽게 만드는 성격테스트</h2>
-                <p class="slide-sub">꾸준히 사랑받는 멋쟁이사자처럼 스테디 강의</p>
-                <button class="slide-btn">자세히 보기</button>
-              </div>
-            </div>
-          </div>
+
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
         </div>
-      </div>
     </section>
     
     <!-- footer 영역 -->
@@ -594,27 +652,12 @@
         </ul>
 
         <div class="footer-badges">
-          <div class="badge badge-cp"><img src="../src/기타파일/웹디자인 로고/cpaa.png" class="badge cpaa"></img></div>
-          <div class="badge badge-family"><img src="../src/기타파일/웹디자인 로고/family.png" class="badge family"></img></div>
+          <div class="badge badge-cp"><img src="../src/기타파일/webdesignlogo/cpaa.png" class="badge cpaa"></img></div>
+          <div class="badge badge-family"><img src="../src/기타파일/webdesignlogo/family.png" class="badge family"></img></div>
         </div>
       </div>
     </footer>
 <!-- Swiper JS -->
 <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
-
-<!-- Initialize Swiper -->
-<script type="module">
-  import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.mjs'
-  var swiper = new Swiper(".swiper-container", {
-    slidesPerView: 1,
-    loop: true,
-    autoplay: { delay:3000, disableOnInteraction:false },
-    effect: "fade",
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
-    },
-  });
-</script>
 </body>
 </html>

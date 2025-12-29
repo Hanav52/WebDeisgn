@@ -1,0 +1,261 @@
+/* =========================
+   Brand Area
+   ========================= */
+.brand-area {
+  background: #242424; 
+  color: #fff;
+  padding: 140px 0 160px;
+  height: 1080px;
+  text-align: center;
+  overflow: hidden;
+}
+.be {
+  background-image: url(../기타파일/section04.png);
+
+}
+/* =========================
+   Head Text
+   ========================= */
+.brandsog {
+  display: block;
+  font-size: 20px;
+  letter-spacing: 0.1em;
+  font-weight: bold;
+}
+
+.brand-head h2 {
+  font-size: 56px;
+  line-height: 1.3;
+  margin: 16px 0 24px;
+  font-weight: 700;
+}
+.closesee {
+  font-size: 18px;
+}
+
+/* =========================
+   Swiper
+   ========================= */
+.brand-swiper {
+  width: 100%;
+  margin-top: 50px;
+}
+
+.brand-area .brand-swiper .swiper-wrapper {
+  overflow: visible;
+}
+
+.brand-area .brand-swiper .swiper-wrapper .swiper-slide, .next, .prev {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+/* =========================
+   Brand Item
+   ========================= */
+/* .brand-item {
+  height: 420px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+} */
+.brand-item {
+  justify-content: flex-start;
+  display: flex;
+  flex-direction: column;
+  padding-top: 40px;
+  align-items: center;
+  height: 460px;
+  overflow: hidden;
+}
+
+.brand-title {
+  margin-top: auto;
+  padding-bottom: 20px;
+  display: flex;
+  align-items: center;
+}
+
+/* =========================
+   Product Image (핵심 연출)
+   ========================= */
+/* 기본 상태: 이미지 숨김 */
+.product-img {
+  width: 160px;
+  height: 387px;
+  transform: scale(0.3);
+  opacity: 0;
+  transition:
+    transform 1s ease,
+    opacity 0.3s ease;
+}
+
+/* 이미지 기본 */
+/* .product-img {
+  width: 160px;
+  transform: scale(1);
+  opacity: 1;
+  transition: transform 0.5s ease, opacity 0.5s ease;
+} */
+
+/* 사라지는 상태 */
+.brand-swiper.is-hiding .swiper-slide-active .product-img {
+  transform: scale(0.3);
+  opacity: 0;
+}
+/* ⭐ 슬라이드 이동이 끝난 뒤에만 */
+.brand-swiper.is-arrived .swiper-slide-active .product-img {
+  transform: scale(1);
+  opacity: 1;
+}
+
+.brand-title-logo {
+  width: 150px;
+  /* height: 104px; */
+}
+
+
+/* 중앙 활성 슬라이드 */
+.swiper-slide-active .product-img {
+  transform: scale(1);
+  opacity: 1;
+  width: 160px;
+  height: 320px;
+  object-fit: contain;
+}
+
+.swiper-slide-active .brand-title {
+  opacity: 1;
+}
+
+/* 이전 / 다음 슬라이드 */
+.swiper-slide-prev .product-img,
+.swiper-slide-next .product-img {
+  transform: scale(0.3);
+  opacity: 0;
+}
+
+/* =========================
+   Brand Title
+   ========================= */
+.brand-title {
+  margin-top: 24px;
+  font-size: 22px;
+  font-weight: 600;
+  opacity: 0.6; /* 항상 보임 */
+  transition:
+    transform 1s ease,
+    opacity 1s ease;
+}
+
+/* 중앙일 때만 아래로 */
+.swiper-slide-active .brand-title {
+  transform: translateY(0);
+}
+
+/* 중앙 아닐 때는 위쪽 위치 */
+.swiper-slide:not(.swiper-slide-active) .brand-title {
+  transform: translateY(-250px);
+}
+
+/* =========================
+   Navigation (화살표)
+   ========================= */
+.swiper-button-prev,
+.swiper-button-next {
+  color: #fff;
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  font-size: 20px;
+}
+
+/* =========================
+   Responsive
+   ========================= */
+@media (max-width: 1024px) {
+  .brand-head h2 {
+    font-size: 34px;
+    margin-bottom: 60px;
+  }
+
+  .product-img {
+    width: 140px;
+  }
+}
+
+@media (max-width: 768px) {
+  .brand-area {
+    padding: 100px 0 120px;
+  }
+
+  .brand-head h2 {
+    font-size: 28px;
+  }
+
+  .brand-item {
+    height: 320px;
+  }
+
+  .product-img {
+    width: 120px;
+  }
+
+  .brand-title {
+    font-size: 18px;
+  }
+}
+
+
+
+
+.brand-controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+  gap: 20px;
+}
+.brand-prev,
+.brand-next {
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 22px;
+  cursor: pointer;
+  opacity: 0.8;
+  transition: opacity 0.3s ease;
+}
+
+.brand-prev:hover,
+.brand-next:hover {
+  opacity: 1;
+}
+.brand-pagination {
+  font-size: 14px;
+  letter-spacing: 0.1em;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.brand-pagination .current {
+  color: #fff;
+  font-weight: 600;
+}
+
+.brand-pagination .slash {
+  margin: 0 6px;
+}
+
+.brand-more {
+  font-size: 18px;
+  color: #fff;
+  opacity: 0.8;
+  text-decoration: underline;
+}
+
+/* .brand-title-logo {
+  opacity: 0.7;
+} */

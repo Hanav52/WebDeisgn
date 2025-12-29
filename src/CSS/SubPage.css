@@ -107,7 +107,7 @@ a {
 }
 .head-hamburger {
   display: flex;
-  gap: 10px;
+  gap: 20px;
 }
 
 .head-hamburger a {
@@ -194,7 +194,7 @@ ul {
 /* 좌측 컬러 바 */
 .sitemap-side {
   width: 360px;
-  background: linear-gradient(180deg, #ffffff, #910404);
+  background: linear-gradient(180deg, #ffffff, #242424);
   color: #fff;
   display: flex;
   align-items: center;

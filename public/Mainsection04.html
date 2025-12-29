@@ -12,39 +12,73 @@
 </head>
 
 <body>
-    <section class="brand-swiper">
-        <div class="brand-title">
-            <span>브랜드 소개</span>
-            <h2>소비자의 건강한<br>일상에 함께합니다</h2>
+    <section class="brand-section">
+        <div class="brand-head">
+            <span class="brandsog">브랜드 소개</span>
+            <h2 class="h2h2">소비자의 건강한<br>일상에 함께합니다</h2>
+            <span class="closesee">자세히 보기</span>
         </div>
 
-        <div class="swiper brandSwiper">
+        <div class="swiper brand-swiper">
             <div class="swiper-wrapper">
 
-                <!-- Slide 1 -->
+                <!-- slide -->
                 <div class="swiper-slide">
-                    <div class="brand-item">
-                        <span class="brand-left">FUSIDYNE</span>
+                    <div class="brand-slide">
+                        <!-- <p class="brand-name">FUSIDYNE</p> -->
 
-                        <img src="../src/기타파일/활명수.png" alt="제품1" />
+                        <img src="../src/기타파일/활명수.png" class="product-img" alt="product">
 
-                        <span class="brand-right">BETTER</span>
+                        <p class="product-name">까스 활명수</p>
                     </div>
-
-                    <p class="brand-name">까스활명수</p>
                 </div>
 
-                <!-- Slide 2 -->
                 <div class="swiper-slide">
-                    <div class="brand-item">
-                        <span class="brand-left">ALBOTHYL</span>
-
-                        <img src="../src/기타파일/활명수로고.png" alt="제품2" />
-
-                        <span class="brand-right">TRUST</span>
+                    <div class="brand-slide">
+                        <p class="brand-name">BETTER</p>
+                        <img src="../src/기타파일/활명수.png" class="product-img" alt="product">
+                        <p class="product-name">베러 시리즈</p>
                     </div>
+                </div>
 
-                    <p class="brand-name">알보칠</p>
+                <div class="swiper-slide">
+                    <div class="brand-slide">
+                        <!-- <p class="brand-name">화이트큐</p> -->
+                        <img src="../src/기타파일/활명수.png" class="product-img" alt="product">
+                        <p class="product-name">화이트큐</p>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="brand-slide">
+                        <!-- <p class="brand-name">화이트큐</p> -->
+                        <img src="../src/기타파일/활명수.png" class="product-img" alt="product">
+                        <p class="product-name">화이트큐</p>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="brand-slide">
+                        <!-- <p class="brand-name">화이트큐</p> -->
+                        <img src="../src/기타파일/활명수.png" class="product-img" alt="product">
+                        <p class="product-name">화이트큐</p>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="brand-slide">
+                        <!-- <p class="brand-name">화이트큐</p> -->
+                        <img src="../src/기타파일/활명수.png" class="product-img" alt="product">
+                        <p class="product-name">화이트큐</p>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="brand-slide">
+                        <!-- <p class="brand-name">화이트큐</p> -->
+                        <img src="../src/기타파일/활명수.png" class="product-img" alt="product">
+                        <p class="product-name">화이트큐</p>
+                    </div>
                 </div>
 
             </div>
@@ -54,6 +88,36 @@
             <div class="swiper-button-next"></div>
         </div>
     </section>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+
+    <script>
+        const brandSwiper = new Swiper(".brand-swiper", {
+            slidesPerView: 5,
+            centeredSlides: true,
+            loop: true,
+            speed: 800,
+
+            // autoplay: {
+            //     delay: 3500,
+            //     disableOnInteraction: false
+            // },
+
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev"
+            },
+
+            breakpoints: {
+                0: {
+                    slidesPerView: 1
+                },
+                768: {
+                    slidesPerView: 3
+                }
+            }
+        });
+    </script>
+
 
 </body>
 
