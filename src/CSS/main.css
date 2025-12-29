@@ -1,57 +1,58 @@
 /* CSS 기본 셋팅 */
 @font-face {
-    font-family: 'AstaSans';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2505-1@1.0/AstaSans-Light.woff2') format('woff2');
-    font-weight: 300;
-    font-display: swap;
+  font-family: 'AstaSans';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2505-1@1.0/AstaSans-Light.woff2') format('woff2');
+  font-weight: 300;
+  font-display: swap;
 }
 
 @font-face {
-    font-family: 'AstaSans';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2505-1@1.0/AstaSans-Regular.woff2') format('woff2');
-    font-weight: 400;
-    font-display: swap;
+  font-family: 'AstaSans';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2505-1@1.0/AstaSans-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-display: swap;
 }
 
 @font-face {
-    font-family: 'AstaSans';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2505-1@1.0/AstaSans-Medium.woff2') format('woff2');
-    font-weight: 500;
-    font-display: swap;
+  font-family: 'AstaSans';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2505-1@1.0/AstaSans-Medium.woff2') format('woff2');
+  font-weight: 500;
+  font-display: swap;
 }
 
 @font-face {
-    font-family: 'AstaSans';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2505-1@1.0/AstaSans-SemiBold.woff2') format('woff2');
-    font-weight: 600;
-    font-display: swap;
+  font-family: 'AstaSans';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2505-1@1.0/AstaSans-SemiBold.woff2') format('woff2');
+  font-weight: 600;
+  font-display: swap;
 }
 
 @font-face {
-    font-family: 'AstaSans';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2505-1@1.0/AstaSans-Bold.woff2') format('woff2');
-    font-weight: 700;
-    font-display: swap;
+  font-family: 'AstaSans';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2505-1@1.0/AstaSans-Bold.woff2') format('woff2');
+  font-weight: 700;
+  font-display: swap;
 }
 
 @font-face {
-    font-family: 'AstaSans';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2505-1@1.0/AstaSans-ExtraBold.woff2') format('woff2');
-    font-weight: 800;
-    font-display: swap;
+  font-family: 'AstaSans';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2505-1@1.0/AstaSans-ExtraBold.woff2') format('woff2');
+  font-weight: 800;
+  font-display: swap;
 }
 
 *,
 *::before,
 *::after {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-body{
+body {
   font-family: 'AstaSans';
 }
+
 a {
   all: unset;
   cursor: pointer;
@@ -167,23 +168,27 @@ a {
   background-repeat: no-repeat;
   background-position: center;
 }
+
 .section04-title {
   width: 100%;
   text-align: center;
   color: red;
 }
+
 .section04-title p:first-child {
   font-size: 32px;
   color: #fff;
-  font-weight:bolder;
+  font-weight: bolder;
   margin-bottom: 23px;
   padding-top: 141px;
 }
+
 .section04-title p:nth-child(2) {
   font-size: 60px;
   color: #fff;
   font-weight: bold;
 }
+
 .close {
   display: inline-block;
   font-size: 18px;
@@ -191,11 +196,12 @@ a {
   font-weight: medium;
   margin-top: 16px;
 }
+
 .brand-line {
   width: 100%;
   height: 2px;
   background: rgb(255, 255, 255);
-  margin-top: 5px ;
+  margin-top: 5px;
 }
 
 
@@ -207,6 +213,7 @@ a {
 .mySwiper {
   height: 100%;
 }
+
 /* .swiper-button-next-next,
 .swiper-button-prev-prev {
   left: 40px;
@@ -241,71 +248,78 @@ display: flex;
 
 
 .sitemap-list-wrap {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    z-index: 5;
-}
-.sitemap-list-wrap .d-t {
-    min-width: 1370px;
-}
-.d-t {
-    display: table;
-    width: 100%;
-    height: 100%;
-    table-layout: fixed;
-}
-.d-t .d-c {
-    display: table-cell;
-    width: 100%;
-    vertical-align: middle;
-}
-.sitemap-list-wrap .map-list > ul {
-    padding: 0 105px;
-    box-sizing: border-box;
-}
-ul, ol, dl {
-    list-style-type: none;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  z-index: 5;
 }
 
-.sitemap-list-wrap .map-list > ul > li {
-    float: left;
-    width: 20%;
-    padding: 0 20px;
-    box-sizing: border-box;
+.sitemap-list-wrap .d-t {
+  min-width: 1370px;
+}
+
+.d-t {
+  display: table;
+  width: 100%;
+  height: 100%;
+  table-layout: fixed;
+}
+
+.d-t .d-c {
+  display: table-cell;
+  width: 100%;
+  vertical-align: middle;
+}
+
+.sitemap-list-wrap .map-list>ul {
+  padding: 0 105px;
+  box-sizing: border-box;
+}
+
+ul,
+ol,
+dl {
+  list-style-type: none;
+}
+
+.sitemap-list-wrap .map-list>ul>li {
+  float: left;
+  width: 20%;
+  padding: 0 20px;
+  box-sizing: border-box;
 }
 
 .sitemap-list-wrap .map-list dt {
-    padding-bottom: 34px;
-    border-bottom: 2px solid #e5e5e5;
-    font-size: 36px;
-    color: #222;
-    font-weight: 500;
-    line-height: 40px;
-    letter-spacing: -0.1em;
+  padding-bottom: 34px;
+  border-bottom: 2px solid #e5e5e5;
+  font-size: 36px;
+  color: #222;
+  font-weight: 500;
+  line-height: 40px;
+  letter-spacing: -0.1em;
 }
 
 .sitemap-list-wrap .map-list dt span {
-    display: block;
-    margin-bottom: 15px;
-    font-size: 18px;
-    font-family: 'Roboto';
-    color: #aaa;
-    line-height: 18px;
-    font-weight: 400;
-    letter-spacing: 8.8px;
+  display: block;
+  margin-bottom: 15px;
+  font-size: 18px;
+  font-family: 'Roboto';
+  color: #aaa;
+  line-height: 18px;
+  font-weight: 400;
+  letter-spacing: 8.8px;
 }
 
-.sitemap-list-wrap .map-list dt + dd {
-    margin-top: 30px;
+.sitemap-list-wrap .map-list dt+dd {
+  margin-top: 30px;
 }
 
 .sitemap-list-wrap .map-list dd a {
-    display: inline-block;
-    height: 36px;
-    font-size: 18px;
-    color: #666;
-    line-height: 36px;
-    box-sizing: border-box;
-    border-bottom: 3px solid #fff;
+  display: inline-block;
+  height: 36px;
+  font-size: 18px;
+  color: #666;
+  line-height: 36px;
+  box-sizing: border-box;
+  border-bottom: 3px solid #fff;
 }
