@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.8.4/swiper-bundle.min.css">
     <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
     <script src="../src/JS/header.js"></script>
+    <!-- <script src="../src/JS/SubSection01.js"></script> -->
     <script src="../src/JS/SubSection02.js"></script>
     <script src="../src/JS/SubSection03.js"></script>
     <script src="../src/JS/SubSection04.js"></script>
@@ -89,33 +90,6 @@
                 <div class="spanline"></div>
             </div>
 
-            <!-- 메뉴 콘텐츠 -->
-            <!-- <div class="sitemap-content">
-                <div class="sitemap-column">
-                    <small>HOLDINGS</small>
-                    <h3>종근당홀딩스</h3>
-                    <ul>
-                        <li>회사소개</li>
-                        <li>가족회사</li>
-                        <li>투자정보</li>
-                        <li>지속가능경영</li>
-                    </ul>
-                </div>
-
-                <div class="sitemap-column">
-                    <small>PHARMA</small>
-                    <h3>종근당</h3>
-                    <ul>
-                        <li>기업</li>
-                        <li>제품</li>
-                        <li>연구</li>
-                        <li>투자정보</li>
-                        <li>홍보</li>
-                    </ul>
-                </div>
-
-                <!-- 필요 컬럼 계속 추가 -->
-            <!-- </div> -->
             <div class="sitemap-list-wrap">
                 <div class="d-t">
                     <div class="d-c">
@@ -230,9 +204,10 @@
             </div>
 
             <!-- 이미지 박스 -->
-            <div class="rnd-image-box">
-                <img src="../src/기타파일/동화약품사옥.jpg" alt="연구개발센터" class="rnd-image"/>
-            </div>
+            
+        </div>
+        <div class="rnd-image-box">
+            <img src="../src/기타파일/동화약품사옥.jpg" alt="연구개발센터" class="rnd-image" id="rnd-image"/>
         </div>
     </section>
 
@@ -704,7 +679,8 @@
             <p>동화약품 연구소는 혁신 신약과 제품 개발 역량을 확보하기 위해<br>
             AI 기업, 대학, 병원 등과 다양한 네트워크 구축 및 공동연구를 활발히 수행하고 있습니다.</p>
             <div class="carousel">
-                <div class="group">
+                <div class="carousel-track">
+                    <div class="group">
                     <div class="card"><img src="../src/기타파일/webdesignlogo/연대세브란스병원.png"></div>
                     <div class="card"><img src="../src/기타파일/webdesignlogo/연세대.png"></div>
                     <div class="card"><img src="../src/기타파일/webdesignlogo/animuscure.png"></div>
@@ -712,17 +688,19 @@
                     <div class="card"><img src="../src/기타파일/webdesignlogo/IMP-LOGO-국문-영문-좌우조합.png"></div>
                     <div class="card"><img src="../src/기타파일/webdesignlogo/경희대약.png"></div>
                     <div class="card"><img src="../src/기타파일/webdesignlogo/cimplrx.png"></div>
+                    </div>
+                    <!-- 중복된 카드를 스크린 리더에서 숨기기 위해 aria-hidden 을 추가합니다. -->
+                    <div aria-hidden class="group">
+                        <div class="card"><img src="../src/기타파일/webdesignlogo/연대세브란스병원.png"></div>
+                        <div class="card"><img src="../src/기타파일/webdesignlogo/연세대.png"></div>
+                        <div class="card"><img src="../src/기타파일/webdesignlogo/animuscure.png"></div>
+                        <div class="card"><img src="../src/기타파일/fhrh6.png"></div>
+                        <div class="card"><img src="../src/기타파일/webdesignlogo/IMP-LOGO-국문-영문-좌우조합.png"></div>
+                        <div class="card"><img src="../src/기타파일/webdesignlogo/경희대약.png"></div>
+                        <div class="card"><img src="../src/기타파일/webdesignlogo/cimplrx.png"></div>
+                    </div>
                 </div>
-                <!-- 중복된 카드를 스크린 리더에서 숨기기 위해 aria-hidden 을 추가합니다. -->
-                <div aria-hidden class="group">
-                    <div class="card"><img src="../src/기타파일/webdesignlogo/연대세브란스병원.png"></div>
-                    <div class="card"><img src="../src/기타파일/webdesignlogo/연세대.png"></div>
-                    <div class="card"><img src="../src/기타파일/webdesignlogo/animuscure.png"></div>
-                    <div class="card"><img src="../src/기타파일/fhrh6.png"></div>
-                    <div class="card"><img src="../src/기타파일/webdesignlogo/IMP-LOGO-국문-영문-좌우조합.png"></div>
-                    <div class="card"><img src="../src/기타파일/webdesignlogo/경희대약.png"></div>
-                    <div class="card"><img src="../src/기타파일/webdesignlogo/cimplrx.png"></div>
-                </div>
+                
             </div>
             <div class="backgroundtext">DONGHWA</div>
             

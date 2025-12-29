@@ -34,6 +34,7 @@
   width: calc(100vw - 350px);  /* 오른쪽은 끝까지 */
   height: 320px;
   overflow: hidden;
+  background-attachment: fixed;
 }
 
 /* 실제 이미지 */
