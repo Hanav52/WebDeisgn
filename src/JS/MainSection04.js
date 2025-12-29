@@ -53,7 +53,7 @@ function startAutoSlide() {
   }, 4000); // 전체 슬라이드 간격
 }
 
-// startAutoSlide();
+startAutoSlide();
 document.querySelector(".swiper-button-next")
   .addEventListener("click", () => {
     swiper.el.classList.add("is-hiding");
