@@ -33,7 +33,9 @@
 
 .upupbox {
     color: #fff;
-    padding: 141px 542px 119px 352px;
+    max-width: 1220px;
+    margin: 0 auto;
+    padding: 141px 0 119px;
     display: flex;
     justify-content: space-between;
 }
@@ -142,5 +144,21 @@
 
   .brand-title h2 {
     font-size: 26px;
+  }
+}
+@media (max-width: 800px) {
+  .upupbox {
+    padding: 80px 20px 40px;
+    display: block;
+    text-align: left;
+  }
+
+  .upupbox-second {
+    display: none; /* 설명 제거 */
+  }
+
+  .upupbox-first {
+    font-size: 20px;
+    white-space: nowrap;   /* ⭐ 글자 세로 방지 핵심 */
   }
 }
