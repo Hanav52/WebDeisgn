@@ -131,22 +131,22 @@
     opacity: 1;
 }
 .research-card1:hover > .icon {
-    content: url("../기타파일/webdesignlogo/dna-white.png");
+    content: url("../images/subpage/dna-white.png");
 }
 .research-card1:hover > .icon2 {
-    content: url("../기타파일/secondcard-white.png");
+    content: url("../images/subpage/secondcard-white.png");
 }
 .research-card1:hover > .icon3 {
-    content: url("../기타파일/medicine-white.png");
+    content: url("../images/subpage/medicine-white.png");
 }
 .research-card1:hover > .icon4 {
-    content: url("../기타파일/plant-white.png");
+    content: url("../images/subpage/plant-white.png");
 }
 .research-card1:hover > .icon5 {
-    content: url("../기타파일/medi-whitepng.png");
+    content: url("../images/subpage/medi-whitepng.png");
 }
 .research-card1:hover > .icon6 {
-    content: url("../기타파일/search-white.png");
+    content: url("../images/subpage/search-white.png");
 }
 
 /* @media (max-width: 1300px) {

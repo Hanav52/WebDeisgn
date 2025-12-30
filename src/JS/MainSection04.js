@@ -1,14 +1,13 @@
-
 document.addEventListener("DOMContentLoaded", () => {
 const swiper = new Swiper('.brand-swiper', {
   slidesPerView: 5,
   autoplay: {
-            delay: 2000,
+            delay: 1500,
             disableOnInteraction: false,
   },
   loop: true,
   centeredSlides: true,
-  speed: 900,
+  speed: 700,
   breakpoints: {
             0: {
             slidesPerView: 1,
@@ -76,11 +75,11 @@ updatePagination();
 swiper.on("init", updatePagination);
 swiper.on("slideChange", updatePagination);
 
-document.querySelector(".brand-pre").addEventListener("click", () => {
+document.querySelector(".brand-prev").addEventListener("click", () => {
   swiper.slidePrev();
 });
 
-document.querySelector(".brand-nex").addEventListener("click", () => {
+document.querySelector(".brand-next").addEventListener("click", () => {
   swiper.slideNext();
 });
 

@@ -18,10 +18,10 @@ window.addEventListener("scroll", () => {
       (windowH - rect.top) / (windowH + rect.height);
 
     // 이동 범위
-    const maxMove = 400;
+    const maxMove = 500;
 
     // 속도 배수
-    const speed = 1.8;
+    const speed = 2;
 
     // ⭐ clamp 제거 (왕복 핵심)
     const translateY = (progress - 0.5) * maxMove * speed;

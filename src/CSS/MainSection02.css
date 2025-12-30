@@ -10,7 +10,7 @@
 .history {
     position: relative;
     height: 1000px;
-    background: url('../기타파일/section02.jpg') center/cover no-repeat;
+    background: url('../images/mainpage/section02.jpg') center/cover no-repeat;
     background-size: cover;
     color: #fff;
     overflow: hidden;

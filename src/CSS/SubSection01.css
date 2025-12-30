@@ -55,7 +55,8 @@
 } */
 .rnd-image {
   position: absolute;
-  /* transform: translateY(-50%); */margin-left: 350px;
+  /* transform: translateY(-20%); */
+  margin-left: 350px;
   width: 100%;
   will-change: transform;
 }
