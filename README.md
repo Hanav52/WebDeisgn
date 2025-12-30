@@ -6,7 +6,7 @@
 [동화약품 리뉴얼](https://hanav52.github.io/WebDeisgn/public/mainindex.html).
 
 <h2>Project Date</h2>
-2022. 06 ~ 2022. 08<br>
+2025. 12 ~ 2025. 12<br>
   
 <h2>환경 & 기술</h2>
 
@@ -18,10 +18,18 @@
 >
 > Git을 이용하여 배포
 
+## 디자인(Figma)
+
+[Figma 디자인](https://www.figma.com/design/t3feGkoX4VFdZrqoZ2qVHI/%EC%9B%B9%EC%82%AC%EC%9D%B4%ED%8A%B8%EB%94%94%EC%9E%90%EC%9D%B8?node-id=0-1&t=bGeflFnOkYMXDmY3-1).
+
 ## 화면(반응형)
 <div>
-  <h5>Main & Sub</h5>
-<img width="49%" src="./src/images/webpagedesign/website-main.png"/>
+  <h5>MainPage</h5>
+<img width="50%" src="./src/images/webpagedesign/website-main.png"/>
+</div>
+
+<div>
+  <h5>SubPage</h5>
 <img width="50%" src="./src/images/webpagedesign/website-sub.png"/>
 </div>
 
