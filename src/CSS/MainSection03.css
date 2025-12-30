@@ -182,7 +182,10 @@
 
 /* EMALL 가로형 */
 .overlay.horizontal {
-  top: auto;
+  top: 94%;
+}
+.overlay.smsm {
+  top: 89%;
 }
 
 /* DRINK hover swap */
