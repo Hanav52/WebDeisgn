@@ -1,9 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
     const tabs = document.querySelectorAll('.sectino05-upbox-right .tab');
-
-    console.log(tabs);
     const tables = document.querySelectorAll('.pipeline-table');
-    console.log(tables);
 
     tabs.forEach(tab => {
         tab.addEventListener('click', () => {

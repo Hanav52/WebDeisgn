@@ -1,13 +1,14 @@
+
 document.addEventListener("DOMContentLoaded", () => {
-const swiper = new Swiper(".brand-swiper", {
-  centeredSlides: true,
+const swiper = new Swiper('.brand-swiper', {
   slidesPerView: 5,
+  autoplay: {
+            delay: 2000,
+            disableOnInteraction: false,
+  },
   loop: true,
-  speed: 3000,   // 이동 애니메이션
-  // navigation: {
-  //   nextEl: ".swiper-button-next",
-  //   prevEl: ".swiper-button-prev",
-  // }
+  centeredSlides: true,
+  speed: 900,
   breakpoints: {
             0: {
             slidesPerView: 1,
@@ -35,65 +36,33 @@ const swiper = new Swiper(".brand-swiper", {
             freeMode: true,
             },
             },
+  on: {
+    slideChangeTransitionStart() {
+      this.el.classList.remove('is-arrived');
+      this.el.classList.add('is-hiding');
+    },
+
+    slideChangeTransitionEnd() {
+      this.el.classList.remove('is-hiding');
+
+      // 🔥 핵심: 타이밍 보정
+      setTimeout(() => {
+        this.el.classList.add('is-arrived');
+      }, 50);
+    }
+  }
+
+  
+
 });
-let slideTimer;
-
-function startAutoSlide() {
-  slideTimer = setInterval(() => {
-    // 1️⃣ 이미지 먼저 숨김
-    swiper.el.classList.add("is-hiding");
-
-    // 2️⃣ 숨김 애니메이션 끝난 후 슬라이드 이동
-    setTimeout(() => {
-      swiper.slideNext();
-
-      // 3️⃣ 이동 시작과 동시에 숨김 상태 해제
-      swiper.el.classList.remove("is-hiding");
-    }, 300); // ← CSS transition 시간과 동일
-  }, 4000); // 전체 슬라이드 간격
-}
-
-startAutoSlide();
-document.querySelector(".swiper-button-next")
-  .addEventListener("click", () => {
-    swiper.el.classList.add("is-hiding");
-
-    setTimeout(() => {
-      swiper.slideNext();
-      swiper.el.classList.remove("is-hiding");
-    }, 500);
-  });
-
-document.querySelector(".swiper-button-prev")
-  .addEventListener("click", () => {
-    swiper.el.classList.add("is-hiding");
-
-    setTimeout(() => {
-      swiper.slidePrev();
-      swiper.el.classList.remove("is-hiding");
-    }, 500);
-  });
-/* 이동 시작 → 아직 애니메이션 금지 */
-swiper.on("slideChangeTransitionStart", () => {
-  swiper.el.classList.remove("is-arrived");
-});
-
-/* 이동 종료 → 이제 애니메이션 허용 */
-swiper.on("slideChangeTransitionEnd", () => {
-  swiper.el.classList.add("is-arrived");
-});
-
-/* 최초 로드 시에도 적용 */
-swiper.on("init", () => {
-  swiper.el.classList.add("is-arrived");
-});
-
-
 
 const currentEl = document.querySelector(".brand-pagination .current");
 const totalEl = document.querySelector(".brand-pagination .total");
 
-const totalSlides = swiper.slides.length - swiper.loopedSlides * 2;
+const totalSlides = swiper.slides.filter(
+  slide => !slide.classList.contains("swiper-slide-duplicate")
+).length;
+
 totalEl.textContent = String(totalSlides).padStart(2, "0");
 
 function updatePagination() {
@@ -101,16 +70,18 @@ function updatePagination() {
   currentEl.textContent = String(realIndex).padStart(2, "0");
 }
 
+swiper.on("slideChange", updatePagination);
+updatePagination();
+
 swiper.on("init", updatePagination);
 swiper.on("slideChange", updatePagination);
 
-document.querySelector(".brand-prev").addEventListener("click", () => {
+document.querySelector(".brand-pre").addEventListener("click", () => {
   swiper.slidePrev();
 });
 
-document.querySelector(".brand-next").addEventListener("click", () => {
+document.querySelector(".brand-nex").addEventListener("click", () => {
   swiper.slideNext();
 });
-
 
 });

@@ -31,19 +31,35 @@
 
 /* 이미지 박스 (시안 핵심) */
 .rnd-image-box {
-  width: calc(100vw - 350px);  /* 오른쪽은 끝까지 */
+  /* width: calc(100vw - 350px);   */
+  /* 오른쪽은 끝까지 */
   height: 320px;
   overflow: hidden;
-  background-attachment: fixed;
+  position: relative;   /* 중요 */
 }
 
 /* 실제 이미지 */
-.rnd-image {
+/* .rnd-image {
   width: 100%;
   height: auto;
-  transform: translateY(-120px);   /* 시작 위치 */
+  transform: translateY(-120px);
+  will-change: transform;
+} */
+
+/* .rnd-image {
+  position: absolute;
+  right: 0;
+  width: 100%;
+  height: auto;
+  will-change: transform;
+} */
+.rnd-image {
+  position: absolute;
+  /* transform: translateY(-50%); */margin-left: 350px;
+  width: 100%;
   will-change: transform;
 }
+
 
 @media (max-width: 1199px) {
 

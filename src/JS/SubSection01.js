@@ -1,23 +1,33 @@
 document.addEventListener("DOMContentLoaded", () => {
-    const image = document.getElementById("rnd-image");
-  const section = document.querySelector(".rnd-section");
+const section = document.querySelector(".rnd-section");
+const image = document.querySelector(".rnd-image");
 
-  window.addEventListener("scroll", () => {
-    const sectionRect = section.getBoundingClientRect();
-    const windowHeight = window.innerHeight;
+window.addEventListener("scroll", () => {
+  const rect = section.getBoundingClientRect();
+  const windowH = window.innerHeight;
 
-    // 섹션이 화면에 들어왔을 때만
-    if (sectionRect.top < windowHeight && sectionRect.bottom > 0) {
-      const progress =
-        (windowHeight - sectionRect.top) /
-        (windowHeight + sectionRect.height);
+  // 섹션이 화면 안에 있을 때만
+  if (rect.top < windowH && rect.bottom > 0) {
 
-      const translateY = Math.max(
-        Math.min(progress * 120, 120),
-        0
-      );
+    /*
+      progress:
+      - 섹션 상단이 화면 하단에 닿을 때 → 0
+      - 섹션 하단이 화면 상단에 닿을 때 → 1
+    */
+    const progress =
+      (windowH - rect.top) / (windowH + rect.height);
 
-      image.style.transform = `translateY(${translateY}px)`;
-    }
-  });
+    // 이동 범위
+    const maxMove = 400;
+
+    // 속도 배수
+    const speed = 1.8;
+
+    // ⭐ clamp 제거 (왕복 핵심)
+    const translateY = (progress - 0.5) * maxMove * speed;
+
+    image.style.transform = `translateY(${-translateY}px)`;
+  }
+});
+
 });

@@ -265,7 +265,7 @@
 }
 /* 짧은 카드들 */
 .overlay.small p {
-  font-size: 12px;
+  font-size: 14px;
   line-height: 1.5;
   /* margin: 12px 0; */
   opacity: 0;
